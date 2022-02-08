@@ -1,12 +1,13 @@
 import React from "react"
 import Layout from '../components/Layout'
-import Button from '../components/Button'
+import DonateBtn from '../components/DonateBtn'
 
 export default function Home() {
-
   return <Layout>
-    <Button/>
-    <Button/>
+    <div className="flex-btns">
+      <DonateBtn txt="Google Pay" href="https://support.actblue.com/donors/contributions/how-do-i-use-google-pay-to-donate/"/>
+      <DonateBtn txt="Paypal"  href="https://support.actblue.com/donors/contributions/how-do-i-use-google-pay-to-donate/"/>
+    </div>
     <div className="body">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet facilisis magna etiam tempor. Dui faucibus in ornare quam viverra orci sagittis eu. Nunc pulvinar sapien et ligula. Ornare quam viverra orci sagittis. Consectetur libero id faucibus nisl tincidunt. Cras fermentum odio eu feugiat pretium. Integer vitae justo eget magna fermentum. Tempus egestas sed sed risus pretium quam vulputate dignissim. Scelerisque viverra mauris in aliquam. Ac turpis egestas integer eget aliquet nibh praesent tristique. Sit amet mattis vulputate enim nulla aliquet porttitor. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Ultricies integer quis auctor elit sed vulputate mi sit amet.
     </div>
@@ -26,6 +27,11 @@ Faucibus ornare suspendisse sed nisi lacus. Feugiat pretium nibh ipsum consequat
       The more information you write or verbalize into the search box the
 Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Eu lobortis elementum nibh tellus. A iaculis at erat pellentesque adipiscing commodo elit at imperdiet. Orci dapibus ultrices in iaculis nunc sed augue lacus viverra. Amet consectetur adipiscing elit duis. Sem nulla pharetra diam sit. Sagittis id consectetur purus ut faucibus pulvinar. Parturient montes nascetur ridiculus mus mauris. Egestas egestas fringilla phasellus faucibus scelerisque. Enim lobortis scelerisque fermentum dui faucibus in. Arcu odio ut sem nulla pharetra. Odio ut sem nulla pharetra diam. Integer quis auctor elit sed vulputate mi sit amet. Faucibus pulvinar elementum integer enim. Adipiscing enim eu turpis egestas pretium aenean pharetra. Arcu odio ut sem nulla pharetra diam. Tellus id interdum velit laoreet. Viverra aliquet eget sit amet tellus cras adipiscing.
     </div>
+    <div className="flex-btns">
+      <DonateBtn txt="Google Pay" href=""/>
+      <DonateBtn txt="Paypal"  href=""/>
+    </div>
+
   </Layout>
  
 }

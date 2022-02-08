@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 * {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -9,18 +9,42 @@
 }
 body{
   color: #333333;
-  line-height: 16px;
-  margin: 2rem 8rem;
+  margin: 2rem auto;
+  max-width: 775px;
+  padding: 2rem;
 }
-a{
+h1{
+  font-size: 3rem;
+  line-height: 3rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+div.body{
+  margin: 4rem auto;
+}
+nav.navbar{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 2rem;
+}
+nav.navbar img.logo{
+  width: max-content;
+  max-width: fit-content;
+}
+
+div.flex-btns {
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+a.donate-btn{
   color: white;
   background: #055C6E;
   border-radius: 20px;
   padding: 10px 12.74px;
   text-decoration: none;
-}
-
-div.body{
-  margin: 4rem auto;
-
+  text-align: center;
+  margin: 1rem 1rem 1.34rem;
 }
