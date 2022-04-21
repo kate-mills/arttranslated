@@ -1,22 +1,56 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import DonateBtn from '../components/DonateBtn'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Home() {
   return (
     <Layout title="Art Translated for Symbols">
       <div className="body">
-        Have fun, be smarter, challenge yourself, open up your eyes to a new
-        world, communicate with people over time, impress your friends and learn
-        an entirely new language.
+        <StaticImage
+          className="feature-image"
+          src="../images/symbol-steps-app-icon-to-result.jpg"
+          alt=""
+          placeholder="blurred"
+          layout="constrained"
+          format="webp"
+          maxHeight={336}
+        />
+        <h3>Translate The Language of Symbols Using Your Mobile Phone</h3>
+        You can now understand a new and unique artistic language now and over
+        history with one of the first mobile apps to convey the meanings,
+        intentions and feelings of symbols in Western art. This app is unique
+        from most books and other reference sources using a structured database
+        of over 120,000 indicators to translate this language in your hand
+        anywhere in the world.
       </div>
 
       <div className="body">
-        Welcome to a new world. Try our new mobile apps leveraging new
-        technologies and mobile capabilities.
+        <h3>Fast, Concise Search Results Ranked By Probability</h3>
+        Because this app is designed specifically for this single function it is
+        quicker and more relevant than a search of the mobile internet. As you
+        view symbols from artists all day, every day in books, streets, museum
+        collections, parks, architecture, sculpture, decor, movies, tattoos and
+        more you can now simply enter the symbol you are seeing into this app.
+        You will be aided by suggestions as you type, to find your specific
+        symbol. Then the search results are written to be specific and brief to
+        get you quick information expected from a mobile app and are presented
+        by highest probability of what you are viewing and what it means to save
+        you time.
       </div>
 
-      <div className="body"></div>
+      <div className="body">
+        <h3>
+          Finding The Right Result Aided By An Image Library Of Over 10,000
+          Images
+        </h3>
+        So that you can confirm we are finding the meanings for the same symbols
+        you are seeing most of your results will be accompanied with one or more
+        images. The images are often from phone cameras so you will often see
+        them in the same real setting, context, image quality and viewpoint that
+        you are viewing them. Images also let you wonder at the amazing creative
+        ways artists interpret the representation of the same symbol.
+      </div>
 
       <div className="flex-btns">
         <DonateBtn
