@@ -4,11 +4,12 @@ import React from 'react'
 import Navbar from './Nav'
 import './layout.css'
 
-const Layout = ({children }) => {
+const Layout = ({title="Art Translated Mobile Apps", children }) => {
 
   return (
     <>
       <Navbar/>
+    <h2>{title}</h2>
       {children}
     </>
   )
