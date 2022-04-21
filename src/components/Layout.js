@@ -11,6 +11,7 @@ const Layout = ({title="Art Translated Mobile Apps", children }) => {
       <Navbar/>
     <h2>{title}</h2>
       {children}
+
     </>
   )
 }

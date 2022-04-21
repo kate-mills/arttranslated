@@ -1,6 +1,8 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import DonateBtn from '../components/DonateBtn'
+import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Home() {
   return (
@@ -16,14 +18,23 @@ export default function Home() {
         technologies and mobile capabilities.
       </div>
 
+    <div className="flex-div">
+
+      <Link to="/art-translated-for-symbols"> {' '} Art Translated for Symbols{' '} </Link>
+      <StaticImage src={'../images/Art-Translated-For-Symbols.png'} alt="" width={75} height={75} />
+    </div>
+    <div className="flex-div">
+      <Link to="/art-translated-for-movements">Art Translated for Movements</Link>
+      <StaticImage src={'../images/Art-Translated-For-Movements.png'} alt="" width={75} height={75} />
+    </div>
+
+
+    <hr/>
       <div className="flex-btns">
+        <DonateBtn txt="Google Pay" href="https://support.actblue.com/donors/contributions/how-do-i-use-google-pay-to-donate/" />
         <DonateBtn
-          txt="Google Pay"
-          href="https://support.actblue.com/donors/contributions/how-do-i-use-google-pay-to-donate/"
-        />
-        <DonateBtn
-          txt="Paypal"
-          href="https://support.actblue.com/donors/contributions/how-do-i-use-google-pay-to-donate/"
+          txt="Give"
+          href="https://givewp.com"
         />
       </div>
     </Layout>
