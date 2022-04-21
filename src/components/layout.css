@@ -74,21 +74,6 @@ a.donate-btn{
   text-align: center;
   margin: 1rem 1rem 1.34rem;
 }
-/*div.flex-link{
-  display: flex;
-  justify-content: space-around;
-}
-div.flex-link{
-  min-width: fit-content;
-}*/
-div.grid-div{
-  display: grid;
-  max-width: fit-content;
-  background: red;
-  grid-template-columns: 210px auto;
-  grid-column-gap: .2fr;
-}
-
 div.flex-div{
   display: flex;
   align-items: center;
@@ -101,6 +86,34 @@ div.flex-div a{
   white-space: nowrap;
   min-width: 230px;
 }
-hr{
+
+footer{
   margin-top: 3rem;
+}
+footer hr {
+  margin-top: 1rem;
+}
+footer div.footer-links{
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+footer div.footer-links a{
+  text-decoration: none;
+  font-size: .75rem;
+  color: #333333;
+}
+
+footer .footer-text-links{
+  display:flex;
+  flex-direction: column;
+}
+footer .footer-text-links a{
+  margin: 0 0 .4rem 1rem;
+  text-align: right;
+}
+
+@media(max-width: 400px){
+  footer .footer-links{
+  }
 }

@@ -6,8 +6,13 @@ import DonateBtn from '../components/DonateBtn'
 const Footer = () => {
   return (
     <footer className="">
+
+    <div className="flex-btns">
+        <DonateBtn txt="Give" href="https://support.actblue.com/donors/contributions/how-do-i-use-google-pay-to-donate/" />
+        <DonateBtn txt="Google Pay" href="https://support.actblue.com/donors/contributions/how-do-i-use-google-pay-to-donate/" />
+      </div>
       <hr />
-      <div className="flex-btns">
+      <div className="footer-links">
         <Link to="/">
           <StaticImage
             src="../images/logo.png"
@@ -16,8 +21,10 @@ const Footer = () => {
             placeholder="blurred"
           />
         </Link>
-        <DonateBtn txt="Give" href="https://support.actblue.com/donors/contributions/how-do-i-use-google-pay-to-donate/" />
-        <DonateBtn txt="Google Pay" href="https://support.actblue.com/donors/contributions/how-do-i-use-google-pay-to-donate/" />
+    <div className="footer-text-links">
+    <Link to="/art-translated-for-symbols">Art Translated for Symbols</Link>
+    <Link to="/art-translated-for-movements">Art Translated for Movements</Link>
+    </div>
       </div>
     </footer>
   )

@@ -24,7 +24,7 @@ export default function Home() {
     </div>
     <div className="flex-div">
       <Link to="/art-translated-for-movements">Art Translated for Movements</Link>
-      <StaticImage src={'../images/Art-Translated-For-Movements.png'} alt="" width={75} height={75} />
+      <StaticImage src={'../images/movements-icon.png'} alt="" width={75} height={75} />
     </div>
     </Layout>
   )

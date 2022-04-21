@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import DonateBtn from '../components/DonateBtn'
 import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Home() {
@@ -50,17 +49,6 @@ export default function Home() {
         them in the same real setting, context, image quality and viewpoint that
         you are viewing them. Images also let you wonder at the amazing creative
         ways artists interpret the representation of the same symbol.
-      </div>
-
-      <div className="flex-btns">
-        <DonateBtn
-          txt="Google Pay"
-          href="https://support.actblue.com/donors/contributions/how-do-i-use-google-pay-to-donate/"
-        />
-        <DonateBtn
-          txt="Paypal"
-          href="https://support.actblue.com/donors/contributions/how-do-i-use-google-pay-to-donate/"
-        />
       </div>
     </Layout>
   )
