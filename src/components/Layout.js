@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Navbar from './Nav'
+import Footer from './Footer'
 import './layout.css'
 
 const Layout = ({title="Art Translated Mobile Apps", children }) => {
@@ -11,7 +12,7 @@ const Layout = ({title="Art Translated Mobile Apps", children }) => {
       <Navbar/>
     <h2>{title}</h2>
       {children}
-
+    <Footer/>
     </>
   )
 }

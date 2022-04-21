@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import DonateBtn from '../components/DonateBtn'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
@@ -27,16 +26,6 @@ export default function Home() {
       <Link to="/art-translated-for-movements">Art Translated for Movements</Link>
       <StaticImage src={'../images/Art-Translated-For-Movements.png'} alt="" width={75} height={75} />
     </div>
-
-
-    <hr/>
-      <div className="flex-btns">
-        <DonateBtn txt="Google Pay" href="https://support.actblue.com/donors/contributions/how-do-i-use-google-pay-to-donate/" />
-        <DonateBtn
-          txt="Give"
-          href="https://givewp.com"
-        />
-      </div>
     </Layout>
   )
 }

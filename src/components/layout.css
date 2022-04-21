@@ -21,9 +21,12 @@ h1, h2, h3{
   text-align: center;
 }
 h2{
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: initial;
+  line-height: initial;
   text-align: left;
+  letter-spacing: initial;
 }
 h3{
   font-size: 1rem;
@@ -58,6 +61,7 @@ nav.navbar img.logo{
 
 div.flex-btns {
   display:flex;
+  align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 }

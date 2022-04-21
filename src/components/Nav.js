@@ -1,13 +1,21 @@
 import React from "react";
-import logo from '../images/logo.png'
 import {Link} from 'gatsby'
+import {StaticImage} from 'gatsby-plugin-image'
 
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="">
       <div className="nav-center">
-        <Link to="/"> <img src={logo} alt=""  className="logo" height="83px" /></Link>
+        <Link to="/">
+
+    <StaticImage
+    src="../images/logo.png"
+    alt=""
+    height={83}
+    placeholder="blurred"
+    />
+    </Link>
       </div>
     </nav>
   )
