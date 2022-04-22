@@ -50,6 +50,12 @@ export default function Home() {
         you are viewing them. Images also let you wonder at the amazing creative
         ways artists interpret the representation of the same symbol.
       </div>
+      <div className="body">
+        <h3>
+          No Need For A Lot Of Reading - Just Download the App And Try It.
+        </h3>
+        <h3 style={{color: 'red', fontSize: '1rem'}}>[Download Functionality]</h3>
+      </div>
     </Layout>
   )
 }

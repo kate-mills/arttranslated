@@ -5,14 +5,13 @@ import Navbar from './Nav'
 import Footer from './Footer'
 import './layout.css'
 
-const Layout = ({title="Art Translated Mobile Apps", children }) => {
 
+const Layout = ({ title = 'Art Translated Mobile Apps', children }) => {
   return (
     <>
-      <Navbar/>
-    <h2>{title}</h2>
+    <Navbar title={title}/>
       {children}
-    <Footer/>
+      <Footer />
     </>
   )
 }
