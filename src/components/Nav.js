@@ -17,11 +17,10 @@ const Navbar = ({ title = 'Art Translated Mobile Apps' }) => {
         <span className="title">{title}</span>
       </h2>
 
-      <div className="">
+      <div>
         <Link className="text" to="/art-translated-for-symbols">
           Symbols
         </Link>
-
         <Link className="text" to="/art-translated-for-movements">
           Movements
         </Link>

@@ -18,7 +18,8 @@ export default function Home() {
         <h3>
           {' '}
           Have Fun While Identifying And Learning About Western Art Movements or
-          Styles<br />
+          Styles
+          <br />
           (e.g. Impressionism) Where You Are - When You Want It
         </h3>
         You see an interesting piece of art at home or elsewhere and you wonder
@@ -50,6 +51,8 @@ export default function Home() {
         movements presented in descending order of probability if more than one.
         The user then selects the highest probability and gets information on
         the movement. Behind the app is the use of machine learning and writers.
+
+        <h3 style={{color: 'red', fontSize: '1rem'}}>[Download Functionality]</h3>
       </div>
     </Layout>
   )

@@ -7,6 +7,7 @@ body{
   color: #333333;
   font-size: .85rem;    /*annie's value is 14px;*/
   font-style: normal;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   letter-spacing: 0.16px;
   line-height: 1.1rem;   /* annie's value is 18px*/
@@ -14,7 +15,12 @@ body{
   max-width: 800px;
   padding: 2rem;
 }
+a{
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+}
 h1, h2, h3{
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   font-weight: 600;
   line-height: 3rem;
@@ -48,6 +54,12 @@ div.gatsby-image-wrapper.feature-image img{
   margin: 0 auto;
 }
 
+nav.navbar{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 2rem;
+}
 nav.navbar img.logo{
   width: max-content;
   max-width: fit-content;
@@ -90,22 +102,8 @@ footer hr {
 footer div.footer-links{
   display:flex;
   justify-content: space-between;
-  align-items: baseline;
-}
-footer div.footer-links a{
-  text-decoration: none;
-  font-size: .75rem;
-  color: #333333;
 }
 
-footer .footer-text-links{
-  display:flex;
-  flex-direction: column;
-}
-footer .footer-text-links a{
-  margin: 0 0 .4rem 1rem;
-  text-align: right;
-}
 
 .flex-header{
   display: flex;
@@ -129,7 +127,7 @@ footer .footer-text-links a{
   font-weight: bold;
   padding-right: 2px;
 }
-.flex-nav a.text{
+.flex-nav > a.text{
   color: #333;
   font-weight: bold;
   margin-left: 5px;
