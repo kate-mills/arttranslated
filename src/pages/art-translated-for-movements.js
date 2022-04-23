@@ -1,11 +1,16 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
 
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby'
 
-export default function Home({data}) {
-  const {file:{childImageSharp:{gatsbyImageData:src}}} = data
+export default function Home({ data }) {
+  const {
+    file: {
+      childImageSharp: { gatsbyImageData: src },
+    },
+  } = data
 
   return (
     <Layout title="for Movements" src={src}>
@@ -19,8 +24,17 @@ export default function Home({data}) {
           format="webp"
           height={336}
         />
-        <h3>
+      </div>
+
+      <div className="body">
+        <Link to="/movement-video" styles={{ fontWeight: '400' }}>
           {' '}
+          Video of Art Translated Movement Classifier Mobile App.{' '}
+        </Link>
+      </div>
+
+      <div className="body">
+        <h3>
           Have Fun While Identifying And Learning About Western Art Movements or
           Styles
           <br />
@@ -55,8 +69,9 @@ export default function Home({data}) {
         movements presented in descending order of probability if more than one.
         The user then selects the highest probability and gets information on
         the movement. Behind the app is the use of machine learning and writers.
-
-        <h3 style={{color: 'red', fontSize: '1rem'}}>[Download Functionality]</h3>
+        <h3 style={{ color: 'red', fontSize: '1rem' }}>
+          [Download Functionality]
+        </h3>
       </div>
     </Layout>
   )
@@ -64,14 +79,14 @@ export default function Home({data}) {
 
 export const query = graphql`
   {
-    file(relativePath: {eq: "for-movements-icon.png"}) {
+    file(relativePath: { eq: "for-movements-icon.png" }) {
       childImageSharp {
         gatsbyImageData(
           layout: FIXED
           placeholder: BLURRED
-          transformOptions: {grayscale: false}
-          width:100 
-          height:100 
+          transformOptions: { grayscale: false }
+          width: 100
+          height: 100
         )
       }
     }
