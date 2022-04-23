@@ -11,7 +11,7 @@ export default function Home({ data }) {
   } = data
   return (
     <Layout src={src} title="for Movements">
-      <MovementVideo />
+      <MovementVideo id="video"/>
     </Layout>
   )
 }

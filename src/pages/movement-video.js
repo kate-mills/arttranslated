@@ -1,9 +1,23 @@
 import React from 'react'
 import Layout from '../components/Layout'
+//import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
-import { MovementVideo } from '../components/Video'
+import { MovementVideo, CloseVideo } from '../components/Video'
+
+import styled from 'styled-components'
+
+const VideoPageWrapper = styled.div`
+  & {
+    position: relative;
+    width: 100%;
+    max-width: fit-content;
+    max-height: fit-content;
+    height: 100%;
+  }
+`
 
 export default function Home({ data }) {
+  const videoRef = React.createRef()
   const {
     file: {
       childImageSharp: { gatsbyImageData: src },
@@ -11,7 +25,10 @@ export default function Home({ data }) {
   } = data
   return (
     <Layout src={src} title="for Movements">
-      <MovementVideo />
+      <VideoPageWrapper>
+        <CloseVideo goTo="/art-translated-for-movements" />
+        <MovementVideo videoRef={videoRef} />
+      </VideoPageWrapper>
     </Layout>
   )
 }
