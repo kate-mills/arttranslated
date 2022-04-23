@@ -47,22 +47,6 @@ div.body{
 }
 
 
-div.flex-btns {
-  display:flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-a.donate-btn{
-  color: white;
-  background: #055C6E;
-  border-radius: 20px;
-  padding: 10px 12.74px;
-  text-decoration: none;
-  text-align: center;
-  margin: 1rem 1rem 1.34rem;
-}
-
 div.index-flex-row{
   display:flex;
   justify-content: baseline;
@@ -89,23 +73,4 @@ div.index-flex-div a{
   text-align: center;
   letter-spacing: 0;
   text-decoration: none;
-}
-
-footer{
-  margin-top: 3rem;
-}
-footer hr {
-  margin-top: 1rem;
-}
-footer div.footer-links{
-  display:flex;
-  justify-content: space-between;
-}
-
-
-
-
-@media(max-width: 400px){
-  footer .footer-links{
-  }
 }
