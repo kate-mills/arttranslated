@@ -4,6 +4,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 body{
+  min-height: 100%;
   color: #333333;
   font-size: .85rem;    /*annie's value is 14px;*/
   font-style: normal;
