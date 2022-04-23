@@ -27,12 +27,11 @@ export default function Home({ data }) {
       </div>
 
       <div className="body">
-        <Link to="/movement-video" styles={{ fontWeight: '400' }}>
+        <Link to="/movement-video#video" styles={{ fontWeight: '400' }}>
           {' '}
           Video of Art Translated Movement Classifier Mobile App.{' '}
         </Link>
       </div>
-
       <div className="body">
         <h3>
           Have Fun While Identifying And Learning About Western Art Movements or

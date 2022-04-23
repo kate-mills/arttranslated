@@ -12,13 +12,10 @@ export default function Home({ data }) {
   } = data
   return (
     <Layout src={src} title="for Movements">
-      <div className="body" style={{textAlign: 'center'}}>
+    <p style={{textAlign: 'center'}}>
     <Link to="/art-translated-for-movements">Close Video</Link>
-    </div>
-      <div className="body">
-
+    </p>
     <RegVideo/>
-      </div>
     </Layout>
   )
 }

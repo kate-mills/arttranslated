@@ -1,10 +1,10 @@
 import React from 'react'
-import video from '../videos/Symbols-Prototype.mp4'
+import video from '../videos/art-translated-for-movments.mp4'
 import styled from 'styled-components'
 
 export const RegVideo = () => {
   return (
-    <RegVideoWrapper>
+    <RegVideoWrapper id="video">
       <video controls autoPlay muted loop>
         <source src={video} type="video/mp4" />
       </video>
@@ -21,9 +21,9 @@ export const Video = ({ src, title, ...props }) => {
           title={title}
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           frameBorder="0"
-          /*webkitallowfullscreen="true"*/
-          /*mozallowfullscreen="true"*/
-          /*allowFullScreen*/
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true"
+          allowFullScreen
         />
       </div>
     </IframeVideoWrapper>
@@ -31,9 +31,10 @@ export const Video = ({ src, title, ...props }) => {
 }
 
 const RegVideoWrapper = styled.div`
-  width: 100%;
   position: relative;
+  min-width: 100%;
   height: 562px;
+  max-height: 882px;
   video {
     position: absolute;
     top: 0;
