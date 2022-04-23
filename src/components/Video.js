@@ -3,15 +3,28 @@ import movementVideo from '../videos/art-translated-for-movments.mp4'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
+
+const CloseVideo = ({goTo, className}) => {
+  return <CloseVideoLinkWrapper to={goTo} className="className">X</CloseVideoLinkWrapper>
+}
+const CloseVideoLinkWrapper = styled(Link)`
+    background: rgb(250 245 245 / 82%);
+    font-size: 3rem;
+    font-weight: 600;
+    position: absolute;
+    text-decoration: none;
+    line-height: 1;
+    padding: 1rem;
+    z-index: 100;
+`
+
 export const MovementVideo = () => {
   return (
     <RegVideoWrapper>
+    <CloseVideo goTo="/art-translated-for-movements" />
       <video controls autoPlay muted loop>
         <source src={movementVideo} type="video/mp4" />
       </video>
-      <Link to="/art-translated-for-movements" className="close-video">
-        X
-      </Link>
     </RegVideoWrapper>
   )
 }
