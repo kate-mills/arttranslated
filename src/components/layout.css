@@ -52,18 +52,9 @@ div.gatsby-image-wrapper.feature-image {
 div.gatsby-image-wrapper.feature-image img{
   max-width: fit-content;
   margin: 0 auto;
+  margin-right: 0;
 }
 
-nav.navbar{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 2rem;
-}
-nav.navbar img.logo{
-  width: max-content;
-  max-width: fit-content;
-}
 
 div.flex-btns {
   display:flex;
@@ -80,17 +71,33 @@ a.donate-btn{
   text-align: center;
   margin: 1rem 1rem 1.34rem;
 }
-div.flex-div{
-  display: flex;
+
+div.index-flex-row{
+  display:flex;
+  justify-content: baseline;
+  flex-wrap: wrap;
   align-items: center;
-  max-width: fit-content;
 }
-div.flex-div a{
-  color: #344751;
-  font-weight: 600;
+div.index-flex-div{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: fit-content;
+  align-items: center;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+div.index-flex-div a.add-before-text::before{
+  content: "Art Translated";
+  display:block;
   text-align: center;
-  white-space: nowrap;
-  min-width: 230px;
+  margin-top: .21rem;
+}
+div.index-flex-div a{
+  display:block;
+  text-align: center;
+  letter-spacing: 0;
+  text-decoration: none;
 }
 
 footer{
@@ -105,36 +112,7 @@ footer div.footer-links{
 }
 
 
-.flex-header{
-  display: flex;
-  align-items: center;
-}
-.flex-header span.title{
-  margin-left: 5px;
-  font-size: 1.2rem;
-} 
-.flex-nav{
-  display:flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
-}
 
-.flex-nav a.text::before{
-  content: "for";
-  font-size: 10px;
-  font-style: italic;
-  font-weight: bold;
-  padding-right: 2px;
-}
-.flex-nav > a.text{
-  color: #333;
-  font-weight: bold;
-  margin-left: 5px;
-}
-.flex-nav a.text:first-of-type{
-  margin-right: 5px;
-}
 
 @media(max-width: 400px){
   footer .footer-links{

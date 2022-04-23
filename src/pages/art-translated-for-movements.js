@@ -2,9 +2,13 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 
-export default function Home() {
+import { graphql } from "gatsby"
+
+export default function Home({data}) {
+  const {file:{childImageSharp:{gatsbyImageData:src}}} = data
+
   return (
-    <Layout title="Art Translated for Movements">
+    <Layout title="for Movements" src={src}>
       <div className="body">
         <StaticImage
           className="feature-image"
@@ -13,7 +17,7 @@ export default function Home() {
           placeholder="blurred"
           layout="constrained"
           format="webp"
-          maxHeight={336}
+          height={336}
         />
         <h3>
           {' '}
@@ -57,3 +61,19 @@ export default function Home() {
     </Layout>
   )
 }
+
+export const query = graphql`
+  {
+    file(relativePath: {eq: "movements.png"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FIXED
+          placeholder: BLURRED
+          transformOptions: {grayscale: false}
+          width:100 
+          height:100 
+        )
+      }
+    }
+  }
+`

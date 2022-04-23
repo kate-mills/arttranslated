@@ -6,14 +6,19 @@ import Footer from './Footer'
 import './layout.css'
 
 
-const Layout = ({ title = 'Art Translated Mobile Apps', children }) => {
+const Layout = ({ title = 'Art Translated Mobile Apps',src='../images/mobile.png', children }) => {
   return (
     <>
-    <Navbar title={title}/>
+    <Navbar title={title} src={src}/>
       {children}
       <Footer />
     </>
   )
+}
+
+Layout.defaultProps = {
+  title: 'Art Translated Mobile Apps',
+  src: '../images/mobile.png',
 }
 
 export default Layout

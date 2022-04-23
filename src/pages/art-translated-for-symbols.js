@@ -1,10 +1,13 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import { graphql } from "gatsby"
 
-export default function Home() {
+export default function Home({data}) {
+  const {file:{childImageSharp:{gatsbyImageData:src}}} = data
+
   return (
-    <Layout title="Art Translated for Symbols">
+    <Layout title="for Symbols" src={src}>
       <div className="body">
         <StaticImage
           className="feature-image"
@@ -13,7 +16,7 @@ export default function Home() {
           placeholder="blurred"
           layout="constrained"
           format="webp"
-          maxHeight={336}
+          height={336}
         />
         <h3>Translate The Language of Symbols Using Your Mobile Phone</h3>
         You can now understand a new and unique artistic language now and over
@@ -59,3 +62,19 @@ export default function Home() {
     </Layout>
   )
 }
+
+export const query = graphql`
+  {
+    file(relativePath: {eq: "symbols.png"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FIXED
+          placeholder: BLURRED
+          transformOptions: {grayscale: false}
+          width:100 
+          height:100 
+        )
+      }
+    }
+  }
+`
