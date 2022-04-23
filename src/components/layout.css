@@ -48,13 +48,8 @@ div.body{
 
 div.gatsby-image-wrapper.feature-image {
   width: 100%;
-}
-div.gatsby-image-wrapper.feature-image img{
   max-width: fit-content;
-  margin: 0 auto;
-  margin-right: 0;
 }
-
 
 div.flex-btns {
   display:flex;
