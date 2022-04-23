@@ -1,8 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
-import {RegVideo} from '../components/Video'
+import { MovementVideo } from '../components/Video'
 
 export default function Home({ data }) {
   const {
@@ -12,10 +11,7 @@ export default function Home({ data }) {
   } = data
   return (
     <Layout src={src} title="for Movements">
-    <p style={{textAlign: 'center'}}>
-    <Link to="/art-translated-for-movements">Close Video</Link>
-    </p>
-    <RegVideo/>
+      <MovementVideo />
     </Layout>
   )
 }
@@ -27,8 +23,8 @@ export const query = graphql`
         gatsbyImageData(
           layout: FIXED
           placeholder: BLURRED
-          width:100 
-          height:100 
+          width: 100
+          height: 100
         )
       }
     }

@@ -1,72 +1,55 @@
 import React from 'react'
-import video from '../videos/art-translated-for-movments.mp4'
+import movementVideo from '../videos/art-translated-for-movments.mp4'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
-export const RegVideo = () => {
+export const MovementVideo = () => {
   return (
-    <RegVideoWrapper id="video">
+    <RegVideoWrapper>
       <video controls autoPlay muted loop>
-        <source src={video} type="video/mp4" />
+        <source src={movementVideo} type="video/mp4" />
       </video>
+      <Link to="/art-translated-for-movements" className="close-video">
+        X
+      </Link>
     </RegVideoWrapper>
   )
 }
 
-export const Video = ({ src, title, ...props }) => {
-  return (
-    <IframeVideoWrapper>
-      <div className="video">
-        <iframe
-          src={src}
-          title={title}
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          frameBorder="0"
-          webkitallowfullscreen="true"
-          mozallowfullscreen="true"
-          allowFullScreen
-        />
-      </div>
-    </IframeVideoWrapper>
-  )
-}
 
 const RegVideoWrapper = styled.div`
   position: relative;
   min-width: 100%;
   height: 562px;
-  max-height: 882px;
+  max-width: fit-content;
+  width: 100%;
+  max-height: 100%;
+
+  .close-video {
+    background: rgb(250 245 245 / 82%);
+    font-size: 3rem;
+    font-weight: 600;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    line-height: 1;
+    top: 20px;
+    left: 11px;
+    width: 50px;
+    height: 50px;
+  }
   video {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: fit-content;
     height: 100%;
     object-fit: contain;
   }
-`
-const IframeVideoWrapper = styled.div`
-  width: 90vw;
-  max-width: 700px;
-
-  .video {
-    overflow: hidden;
-    /* // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
-    padding-top: 56.25%;
-    position: relative;
-    border-radius: var(--radius);
-  }
-
-  .video iframe {
-    border: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+  @media (min-width: 600px) {
+    video {
+      left: 0;
+    }
   }
 `
-
-Video.defaultProps = {
-  src: 'https://www.youtube.com/embed/-8ORfgUa8ow',
-  title: 'the best html css tutorial ever !',
-}
