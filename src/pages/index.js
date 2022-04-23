@@ -27,7 +27,7 @@ export default function Home({ data }) {
         <div className="index-flex-div">
           <Link to="/art-translated-for-symbols">
             <StaticImage
-              src={'../images/symbols.png'}
+              src={'../images/for-symbols-icon.png'}
               alt=""
               width={100}
               height={100}
@@ -40,7 +40,7 @@ export default function Home({ data }) {
         <div className="index-flex-div">
           <Link to="/art-translated-for-movements">
             <StaticImage
-              src={'../images/movements.png'}
+              src={'../images/for-movements-icon.png'}
               alt=""
               width={100}
               height={100}

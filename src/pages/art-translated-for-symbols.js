@@ -11,7 +11,7 @@ export default function Home({data}) {
       <div className="body">
         <StaticImage
           className="feature-image"
-          src="../images/symbol-steps-app-icon-to-result.jpg"
+          src="../images/for-symbols-featureImg.jpg"
           alt=""
           placeholder="blurred"
           layout="constrained"
@@ -65,7 +65,7 @@ export default function Home({data}) {
 
 export const query = graphql`
   {
-    file(relativePath: {eq: "symbols.png"}) {
+    file(relativePath: {eq: "for-symbols-icon.png"}) {
       childImageSharp {
         gatsbyImageData(
           layout: FIXED

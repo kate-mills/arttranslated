@@ -12,7 +12,7 @@ export default function Home({data}) {
       <div className="body">
         <StaticImage
           className="feature-image"
-          src="../images/movement-icon-to-result.jpg"
+          src="../images/for-movements-featureImg.jpg"
           alt=""
           placeholder="blurred"
           layout="constrained"
@@ -64,7 +64,7 @@ export default function Home({data}) {
 
 export const query = graphql`
   {
-    file(relativePath: {eq: "movements.png"}) {
+    file(relativePath: {eq: "for-movements-icon.png"}) {
       childImageSharp {
         gatsbyImageData(
           layout: FIXED
