@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
+import AnchorArrow from '../components/AnchorArrow'
 
 import { graphql } from 'gatsby'
 
@@ -27,10 +28,7 @@ export default function Home({ data }) {
       </div>
 
       <div className="body">
-        <Link to="/movement-video#video" styles={{ fontWeight: '400' }}>
-          {' '}
-          Video of Art Translated Movement Classifier Mobile App.{' '}
-        </Link>
+    <AnchorArrow goTo="/movement-video#video" text={'Video of Art Translated Movement Classifier Mobile App'}/>
       </div>
       <div className="body">
         <h3>

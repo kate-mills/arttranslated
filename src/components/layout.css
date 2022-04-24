@@ -1,61 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans&display=swap');
+
+:root {
+  --green: #055c6e;
+}
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.1599999964237213px;
+  text-align: left;
+  color: #000000;
 }
-body{
+body {
   min-height: 100%;
   color: #333333;
-  font-size: .85rem;    /*annie's value is 14px;*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem; /*annie's value is 12px;*/
   font-style: normal;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   letter-spacing: 0.16px;
-  line-height: 1.1rem;   /* annie's value is 18px*/
+  line-height: 1.1rem; /* annie's value is 18px*/
   margin: 2rem auto;
   max-width: 670px;
   padding: 2rem;
   max-height: 100%;
 }
-a{
-  color: #333333;
-  font-family: 'Montserrat', sans-serif;
-}
-h1, h2, h3{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+a {
+  color: var(--green);
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 600;
-  line-height: 3rem;
+  font-size: 10px;
+  line-height: 18px;
+
+  letter-spacing: 0.16px;
+  text-decoration: none;
+}
+
+h1 {
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.1599999964237213px;
   text-align: center;
 }
 h2{
-  font-size: .8rem;
-  font-weight: 600;
-  margin-bottom: initial;
-  line-height: initial;
-  text-align: left;
-  letter-spacing: initial;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.1599999964237213px;
+text-align: left;
+
 }
-h3{
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5rem;
-  margin-bottom: .5rem;
+
+h3 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.1599999964237213px;
   text-align: left;
 }
 
-div.body{
+div.body {
   margin: 2rem auto;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.1599999964237213px;
+  text-align: left;
 }
 
-
-div.index-flex-row{
-  display:flex;
+div.index-flex-row {
+  display: flex;
   justify-content: baseline;
   flex-wrap: wrap;
   align-items: center;
 }
-div.index-flex-div{
+div.index-flex-div {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -64,14 +94,14 @@ div.index-flex-div{
   margin-right: 1rem;
   margin-left: 1rem;
 }
-div.index-flex-div a.add-before-text::before{
-  content: "Art Translated";
-  display:block;
+div.index-flex-div a.add-before-text::before {
+  content: 'Art Translated';
+  display: block;
   text-align: center;
-  margin-top: .21rem;
+  margin-top: 0.21rem;
 }
-div.index-flex-div a{
-  display:block;
+div.index-flex-div a {
+  display: block;
   text-align: center;
   letter-spacing: 0;
   text-decoration: none;
