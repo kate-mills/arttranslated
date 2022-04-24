@@ -1,11 +1,16 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
-import { graphql, Link } from "gatsby"
+import { graphql } from 'gatsby'
 
+import AnchorArrow from '../components/AnchorArrow'
 
-export default function Home({data}) {
-  const {file:{childImageSharp:{gatsbyImageData:src}}} = data
+export default function Home({ data }) {
+  const {
+    file: {
+      childImageSharp: { gatsbyImageData: src },
+    },
+  } = data
 
   return (
     <Layout title="for Symbols" src={src}>
@@ -28,9 +33,12 @@ export default function Home({data}) {
         anywhere in the world.
       </div>
 
-    <div className="body">
-    <Link to="/symbol-video">Video of the Art Translated Symbolism Mobile App.</Link>
-    </div>
+      <div className="body">
+        <AnchorArrow
+          goTo="/symbol-video#video"
+          text={'Video of the Art Translated Symbolism Mobile App.'}
+        />
+      </div>
 
       <div className="body">
         <h3>Fast, Concise Search Results Ranked By Probability</h3>
@@ -62,7 +70,9 @@ export default function Home({data}) {
         <h3>
           No Need For A Lot Of Reading - Just Download the App And Try It.
         </h3>
-        <h3 style={{color: 'red', fontSize: '1rem'}}>[Download Functionality]</h3>
+        <h3 style={{ color: 'red', fontSize: '1rem' }}>
+          [Download Functionality]
+        </h3>
       </div>
     </Layout>
   )
@@ -70,14 +80,14 @@ export default function Home({data}) {
 
 export const query = graphql`
   {
-    file(relativePath: {eq: "for-symbols-icon.png"}) {
+    file(relativePath: { eq: "for-symbols-icon.png" }) {
       childImageSharp {
         gatsbyImageData(
           layout: FIXED
           placeholder: BLURRED
-          transformOptions: {grayscale: false}
-          width:100 
-          height:100 
+          transformOptions: { grayscale: false }
+          width: 100
+          height: 100
         )
       }
     }

@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/media-has-caption */
+
 import React from 'react'
 import movementVideo from '../videos/art-translated-for-movments.mp4'
 import symbolVideo from '../videos/art-translated-for-symbols.mp4'
@@ -6,9 +8,7 @@ import { Link } from 'gatsby'
 
 export const CloseVideo = ({ goTo, className }) => {
   return (
-    <CloseVideoLinkWrapper to={goTo} className="className">
-      X
-    </CloseVideoLinkWrapper>
+    <CloseVideoLinkWrapper to={goTo} className="className">X</CloseVideoLinkWrapper>
   )
 }
 const CloseVideoLinkWrapper = styled(Link)`
@@ -34,7 +34,6 @@ export const MovementVideo = ({ video }) => {
   )
 }
 
-
 export const SymbolVideo = ({ video }) => {
   return (
     <RegVideoWrapper height="673" width="325" id="video">
@@ -44,8 +43,6 @@ export const SymbolVideo = ({ video }) => {
     </RegVideoWrapper>
   )
 }
-
-
 
 const RegVideoWrapper = styled.div`
   width: 70vw;

@@ -24,6 +24,7 @@ export default function PageVideo({ data }) {
   return (
     <Layout src={src} title="for Symbols">
       <VideoPageWrapper>
+
         <CloseVideo goTo="/art-translated-for-symbols" />
         <SymbolVideo id="video" style={{ margin: '0 auto' }} />
       </VideoPageWrapper>
