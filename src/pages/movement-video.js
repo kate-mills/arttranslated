@@ -27,7 +27,7 @@ export default function Home({ data }) {
     <Layout src={src} title="for Movements">
       <VideoPageWrapper>
         <CloseVideo goTo="/art-translated-for-movements" />
-        <MovementVideo videoRef={videoRef} />
+        <MovementVideo style={{margin: '0 auto'}}/>
       </VideoPageWrapper>
     </Layout>
   )

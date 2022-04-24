@@ -23,18 +23,11 @@ const CloseVideoLinkWrapper = styled(Link)`
   z-index: 2;
 `
 
-export const MovementVideo = ({ video, videoRef }) => {
-  React.useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.focus()
-      console.log('videoRef', videoRef)
-    }
-  }, [])
-
+export const MovementVideo = ({ video }) => {
   return (
-    <RegVideoWrapper id={video} height="673" width="325">
+    <RegVideoWrapper height="673" width="325" id="video">
       <video width="325" height="673" controls autoPlay loop>
-        <source src={movementVideo} type="video/mp4" ref={videoRef} />
+        <source src={movementVideo} type="video/mp4" />
       </video>
     </RegVideoWrapper>
   )
