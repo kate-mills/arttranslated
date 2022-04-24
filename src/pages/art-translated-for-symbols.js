@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
+
 
 export default function Home({data}) {
   const {file:{childImageSharp:{gatsbyImageData:src}}} = data
@@ -26,6 +27,10 @@ export default function Home({data}) {
         of over 120,000 indicators to translate this language in your hand
         anywhere in the world.
       </div>
+
+    <div className="body">
+    <Link to="/symbol-video">Video of the Art Translated Symbolism Mobile App.</Link>
+    </div>
 
       <div className="body">
         <h3>Fast, Concise Search Results Ranked By Probability</h3>

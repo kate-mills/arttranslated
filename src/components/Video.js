@@ -1,5 +1,6 @@
 import React from 'react'
 import movementVideo from '../videos/art-translated-for-movments.mp4'
+import symbolVideo from '../videos/art-translated-for-symbols.mp4'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
@@ -32,6 +33,19 @@ export const MovementVideo = ({ video }) => {
     </RegVideoWrapper>
   )
 }
+
+
+export const SymbolVideo = ({ video }) => {
+  return (
+    <RegVideoWrapper height="673" width="325" id="video">
+      <video width="325" height="673" controls autoPlay loop>
+        <source src={symbolVideo} type="video/mp4" />
+      </video>
+    </RegVideoWrapper>
+  )
+}
+
+
 
 const RegVideoWrapper = styled.div`
   width: 70vw;

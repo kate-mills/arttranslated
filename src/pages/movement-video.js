@@ -17,7 +17,6 @@ const VideoPageWrapper = styled.div`
 `
 
 export default function Home({ data }) {
-  const videoRef = React.createRef()
   const {
     file: {
       childImageSharp: { gatsbyImageData: src },
