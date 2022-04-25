@@ -47,6 +47,7 @@ const Seo = ({ title, description, image, snippet, noindex }) => {
     image:`${image || defaultSeoImage}`,
     url:`${baseUrl}${pathname}`,
   }
+  console.log('seo', seo)
 
   return (
     <React.Fragment>
@@ -108,10 +109,10 @@ Seo.propTypes = {
 }
 
 Seo.defaultProps = {
-  title: null,
-  description:null,
+  title: '',
+  description:'',
   image: ``,
-  snippet: null,
+  snippet: '',
   noindex: false,
   lang: `en`,
   meta: [],

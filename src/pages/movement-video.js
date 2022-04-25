@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import { MovementVideo, CloseVideo } from '../components/Video'
+import Seo from '../components/Seo'
 
 import styled from 'styled-components'
 
@@ -16,14 +17,15 @@ const VideoPageWrapper = styled.div`
   }
 `
 
-export default function Home({ data }) {
+const MovementVideoPage = ({data})=> {
   const {
     file: {
       childImageSharp: { gatsbyImageData: src },
     },
   } = data
   return (
-    <Layout src={src} title="for Movements">
+    <Layout src={src} title="Movement Classifier">
+    <Seo title="Video: Art Translated Movement Classifier"/>
       <VideoPageWrapper>
         <CloseVideo goTo="/art-translated-for-movements" />
         <MovementVideo style={{margin: '0 auto'}}/>
@@ -46,3 +48,5 @@ export const query = graphql`
     }
   }
 `
+
+export default MovementVideoPage

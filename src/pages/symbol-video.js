@@ -3,6 +3,8 @@ import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import { SymbolVideo, CloseVideo } from '../components/Video'
 
+import Seo from '../components/Seo'
+
 import styled from 'styled-components'
 
 const VideoPageWrapper = styled.div`
@@ -16,14 +18,16 @@ const VideoPageWrapper = styled.div`
   }
 `
 
-export default function PageVideo({ data }) {
+const SymbolismVideoPage = ({data}) => {
   const {
     file: {
       childImageSharp: { gatsbyImageData: src },
     },
   } = data
   return (
-    <Layout src={src} title="for Symbols">
+    <Layout src={src} title="Symbolism">
+    <Seo title="Video: Art Translated Symbolism"/>
+
       <VideoPageWrapper>
 
         <CloseVideo goTo="/art-translated-for-symbols" />
@@ -47,3 +51,5 @@ export const query = graphql`
     }
   }
 `
+
+export default SymbolismVideoPage

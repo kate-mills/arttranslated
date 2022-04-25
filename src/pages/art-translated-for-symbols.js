@@ -1,19 +1,16 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
-import { graphql } from 'gatsby'
+
+import Seo from "../components/Seo"
 
 import AnchorArrow from '../components/AnchorArrow'
 
-export default function Home({ data }) {
-  const {
-    file: {
-      childImageSharp: { gatsbyImageData: src },
-    },
-  } = data
+const SymbolismPage = () => {
 
   return (
-    <Layout title="for Symbols" src={src}>
+    <Layout>
+    <Seo title="Art Translated for Symbols" description="You can now understand a new and unique artistic language now and over history with one of the first mobile apps to convey the meanings, intentions and feelings of symbols in Western art. This app is unique from most books and other reference sources using a structured database of over 120,000 indicators to translate this language in your hand anywhere in the world."/>
       <div className="body" style={{textAlign: 'center'}}>
         <StaticImage
           className="feature-image"
@@ -80,18 +77,4 @@ export default function Home({ data }) {
   )
 }
 
-export const query = graphql`
-  {
-    file(relativePath: { eq: "for-symbols-icon.png" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          placeholder: BLURRED
-          transformOptions: { grayscale: false }
-          width: 100
-          height: 100
-        )
-      }
-    }
-  }
-`
+export default SymbolismPage

@@ -4,18 +4,13 @@ import { StaticImage } from 'gatsby-plugin-image'
 import AnchorArrow from '../components/AnchorArrow'
 import Seo from "../components/Seo"
 
-import { graphql } from 'gatsby'
 
-export default function Home({ data }) {
-  const {
-    file: {
-      childImageSharp: { gatsbyImageData: src },
-    },
-  } = data
-
+const MovmentsPage = ()=> {
   return (
-    <Layout title="for Movements" src={src}>
-    <Seo title={`Art Translated for Movements`}/>
+    <Layout>
+    <Seo title={`Art Translated Movement Classifier`}
+    description={`Have Fun While Identifying And Learning About Western Art Movements or Styles. Where You Are - When You Want It`}
+    />
       <div className="body" style={{textAlign: 'center'}}>
         <StaticImage
           className="feature-image"
@@ -73,18 +68,4 @@ export default function Home({ data }) {
   )
 }
 
-export const query = graphql`
-  {
-    file(relativePath: { eq: "for-movements-icon.png" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          placeholder: BLURRED
-          transformOptions: { grayscale: false }
-          width: 100
-          height: 100
-        )
-      }
-    }
-  }
-`
+export default MovmentsPage

@@ -5,7 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/Seo'
 
 
-export default function Home() {
+const IndexPage = ()=> {
   return (
     <Layout>
     <Seo />
@@ -51,3 +51,6 @@ export default function Home() {
     </Layout>
   )
 }
+
+
+export default IndexPage
