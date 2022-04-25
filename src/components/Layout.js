@@ -8,10 +8,10 @@ import Seo from "../components/Seo"
 
 
 const Layout = ({ title, src='../images/mobile.png', children }) => {
+
   return (
     <>
     <Seo title={`Art Translated ${title || 'Mobile Apps'}`}/>
-
     <Navbar title={title} src={src}/>
       {children}
       <Footer />
