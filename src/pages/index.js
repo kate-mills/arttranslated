@@ -2,12 +2,13 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-import { graphql } from 'gatsby'
+import Seo from '../components/Seo'
 
-export default function Home({ data }) {
-  const { file: { childImageSharp: { gatsbyImageData: src }, }, } = data
+
+export default function Home() {
   return (
-    <Layout src={src} title="Mobile Apps">
+    <Layout>
+    <Seo />
       <div className="body">
         Have fun, be smarter, challenge yourself, open up your eyes to a new
         world, communicate with people over time, impress your friends and learn
@@ -50,18 +51,3 @@ export default function Home({ data }) {
     </Layout>
   )
 }
-
-export const query = graphql`
-  {
-    file(relativePath: { eq: "mobile.png" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          placeholder: BLURRED
-          width:100 
-          height:100 
-        )
-      }
-    }
-  }
-`
