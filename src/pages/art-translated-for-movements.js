@@ -62,10 +62,13 @@ export default function Home({ data }) {
         movements presented in descending order of probability if more than one.
         The user then selects the highest probability and gets information on
         the movement. Behind the app is the use of machine learning and writers.
+      </div>
+
+      <div className="body">
         <h3 style={{ color: 'red', fontSize: '1rem' }}>
           [Download Functionality]
         </h3>
-      </div>
+    </div>
     </Layout>
   )
 }
