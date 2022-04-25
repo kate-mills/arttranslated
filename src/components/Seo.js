@@ -47,7 +47,6 @@ const Seo = ({ title, description, image, snippet, noindex }) => {
     image:`${image || defaultSeoImage}`,
     url:`${baseUrl}${pathname}`,
   }
-  console.log('seo', seo)
 
   return (
     <React.Fragment>
