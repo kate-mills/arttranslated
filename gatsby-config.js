@@ -3,6 +3,16 @@ require('dotenv').config({
 })
 
 module.exports = {
+  siteMetadata: {
+    title: `Art Translated Mobile Apps`,
+    author: {
+      name: `Mark Evans`,
+      summary: `Art aficionado.`,
+    },
+    description: `Understand the Language of Art. Welcome to a new world. Try our new mobile apps leveraging new technologies and mobile capabilities.`,
+    siteUrl: `https://arttranslated.netlify.app/`,
+    social: { twitter: `katie_napa` },
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
