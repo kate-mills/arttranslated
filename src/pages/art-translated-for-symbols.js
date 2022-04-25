@@ -71,7 +71,9 @@ const SymbolismPage = () => {
         </h3>
       </div>
       <div className="body">
-        <a href="https://testflight.apple.com/v1/invite/628da32604dc431fa6da47f9f9f8f5405594bd6fb61143319f863686c0dbe37e5ed98459?ct=FMWKQHTZSA&advp=10000&platform=ios" target="_blank" rel="noreferrer">Download Art Translated 0.0.3 (1)</a>
+    {/*<a href="https://testflight.apple.com/v1/invite/628da32604dc431fa6da47f9f9f8f5405594bd6fb61143319f863686c0dbe37e5ed98459?ct=FMWKQHTZSA&advp=10000&platform=ios" target="_blank" rel="noreferrer">Download Art Translated 0.0.3 (1)</a>*/}
+
+      <h3>[Download Coming Soon]</h3>
       </div>
     </Layout>
   )
