@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import AnchorArrow from '../components/AnchorArrow'
+import Seo from "../components/Seo"
 
 import { graphql } from 'gatsby'
 
@@ -14,6 +15,7 @@ export default function Home({ data }) {
 
   return (
     <Layout title="for Movements" src={src}>
+    <Seo title={`Art Translated for Movements`}/>
       <div className="body" style={{textAlign: 'center'}}>
         <StaticImage
           className="feature-image"
