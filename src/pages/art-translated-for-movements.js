@@ -14,7 +14,7 @@ export default function Home({ data }) {
 
   return (
     <Layout title="for Movements" src={src}>
-      <div className="body">
+      <div className="body" style={{textAlign: 'center'}}>
         <StaticImage
           className="feature-image"
           src="../images/for-movements-featureImg.jpg"
@@ -25,7 +25,6 @@ export default function Home({ data }) {
           height={336}
         />
       </div>
-
       <div className="body">
     <AnchorArrow goTo="/movement-video#video" text={'Video of Art Translated Movement Classifier Mobile App'}/>
       </div>

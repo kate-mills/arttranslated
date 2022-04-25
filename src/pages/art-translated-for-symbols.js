@@ -14,7 +14,7 @@ export default function Home({ data }) {
 
   return (
     <Layout title="for Symbols" src={src}>
-      <div className="body">
+      <div className="body" style={{textAlign: 'center'}}>
         <StaticImage
           className="feature-image"
           src="../images/for-symbols-featureImg.jpg"
@@ -24,6 +24,8 @@ export default function Home({ data }) {
           format="webp"
           height={336}
         />
+    </div>
+    <div className="body">
         <h3>Translate The Language of Symbols Using Your Mobile Phone</h3>
         You can now understand a new and unique artistic language now and over
         history with one of the first mobile apps to convey the meanings,

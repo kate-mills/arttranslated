@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const DonateBtn = ({
   txt = 'PayPal',
-  href = 'https://www.google.com',
+  href = '#',
   className,
 }) => {
   return (

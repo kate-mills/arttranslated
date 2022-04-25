@@ -5,11 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
 
 export default function Home({ data }) {
-  const {
-    file: {
-      childImageSharp: { gatsbyImageData: src },
-    },
-  } = data
+  const { file: { childImageSharp: { gatsbyImageData: src }, }, } = data
   return (
     <Layout src={src} title="Mobile Apps">
       <div className="body">

@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout'
-//import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 import { MovementVideo, CloseVideo } from '../components/Video'
 
@@ -10,6 +9,7 @@ const VideoPageWrapper = styled.div`
   & {
     position: relative;
     width: 100%;
+    margin: 0 auto;
     max-width: fit-content;
     max-height: fit-content;
     height: 100%;

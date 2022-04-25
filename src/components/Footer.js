@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
 import DonateBtn from '../components/DonateBtn'
 
 import styled from 'styled-components'
@@ -9,17 +7,9 @@ const Footer = ({ className }) => {
   return (
     <FooterWrapper className={className}>
     <div className="footer-container">
-      <Link to="/" className="logo">
-        <StaticImage
-          src="../images/logo.png"
-          alt=""
-          height={40}
-          placeholder="blurred"
-        />
-      </Link>
       <DonateBtn
         txt="Give"
-        href="https://support.actblue.com/donors/contributions/how-do-i-use-google-pay-to-donate/"
+        href="#"
         className="donate-btn"
       />
     </div>
@@ -38,6 +28,7 @@ const FooterWrapper = styled.footer`
       display:flex;
       flex-wrap: wrap;
       align-items: flex-end;
+      justify-content: center;
     }
 
     a.logo {
