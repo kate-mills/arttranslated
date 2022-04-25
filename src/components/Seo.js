@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import { useLocation } from '@reach/router'
 import { graphql, useStaticQuery } from 'gatsby'
 //import SchemaOrg from './SchemaOrg'
+import { LogoJsonLd, GatsbySeo } from 'gatsby-plugin-next-seo';
 
 
 
@@ -75,6 +76,23 @@ const Seo = ({ title, description, image, snippet, noindex }) => {
         )}
         {seo.image && <meta name="twitter:image" content={seo.image} />}
     </Helmet>
+   <GatsbySeo
+      openGraph={{
+        type: 'website',
+        url: seo.url,
+        title: seo.title,
+        description: seo.description,
+        images: [
+          {
+            url: seo.image,
+            width: 1175,
+            height: 660,
+            alt: '',
+          },
+        ],
+      }}
+    />
+    <LogoJsonLd logo={seo.image} url={seo.url} />
     </React.Fragment>
 
   )
