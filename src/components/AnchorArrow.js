@@ -3,7 +3,7 @@ import {Link} from 'gatsby'
 
 const AnchorArrow = ({goTo, text="", className}) => {
   return (
-    <Link to={goTo || '/'} className={className|| ''}>
+    <Link to={goTo || '/'} className={className|| ''} style={{fontWeight: 600}}>
     {`${text} `}<svg
       width="5"
       height="7"

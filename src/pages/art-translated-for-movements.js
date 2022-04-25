@@ -31,9 +31,7 @@ export default function Home({ data }) {
       <div className="body">
         <h3>
           Have Fun While Identifying And Learning About Western Art Movements or
-          Styles
-          <br />
-          (e.g. Impressionism) Where You Are - When You Want It
+          Styles (e.g. Impressionism) Where You Are - When You Want It
         </h3>
         You see an interesting piece of art at home or elsewhere and you wonder
         what it means and what its place in art history is. You grab your phone

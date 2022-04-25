@@ -16,6 +16,7 @@ const DonateBtn = ({
 const DonateButtonWrapper = styled.a`
   & {
     color: white;
+    font-weight: 300;
     background: #055c6e;
     border-radius: 20px;
     padding: 10px 12.74px;
