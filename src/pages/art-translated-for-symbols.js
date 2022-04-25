@@ -74,7 +74,7 @@ export default function Home({ data }) {
         </h3>
       </div>
       <div className="body">
-        <h3 style={{ color: 'red', fontSize: '1rem' }}>[Download Functionality]</h3>
+        <a href="https://testflight.apple.com/v1/invite/628da32604dc431fa6da47f9f9f8f5405594bd6fb61143319f863686c0dbe37e5ed98459?ct=FMWKQHTZSA&advp=10000&platform=ios">Download Art Translated 0.0.3 (1)</a>
       </div>
     </Layout>
   )
