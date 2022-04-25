@@ -19,7 +19,7 @@ const query = graphql`
   }
 `
 
-const Navbar = ({ src, title, className }) => {
+const Navbar = ({ className }) => {
   const { file: { childImageSharp: { gatsbyImageData: logo }, }, } = useStaticQuery(query)
 
   return (
@@ -27,9 +27,8 @@ const Navbar = ({ src, title, className }) => {
       <div className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-icon">
-    <GatsbyImage image={getImage(logo)} alt="" placeholder="blurred" />
-
-    </Link>
+            <GatsbyImage image={getImage(logo)} alt="" placeholder="blurred" />
+          </Link>
         </div>
       </div>
     </NavbarWrapper>
@@ -43,5 +42,4 @@ const NavbarWrapper = styled.div`
     }
   }
 `
-
 export default Navbar
