@@ -26,7 +26,7 @@ const IndexPage = ({ className }) => {
           </div>
     <div className="body">
         <h3 className="list-header">Download the TestFlight App And Start Testing</h3>
-    <p className="italic">**You must be invited to test.  Invited testers will receive an email with a link to test one or both of our apps.</p>
+    <p className="italic">Invited testers will receive an email with a link to test one or both of our apps.</p>
         <ol>
           <li>To be able to test, you will first have to download the TestFlight app to your mobile device.</li>
           <li>After accepting the invitation, you will be directed to the TestFlight app and you will be prompted to install the app to be tested.</li>
@@ -35,7 +35,7 @@ const IndexPage = ({ className }) => {
     </div>
     <div className="body">
         <p className="italic">
-          **Once started, a test session lasts 85 days. After that period it's no longer possible to test the app, unless you request a new session.
+          *Once started, a test session lasts 85 days. After that period it's no longer possible to test the app, unless you request a new session.
         </p>
     </div>
       </InstructionalWrapper>

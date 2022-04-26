@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import AnchorArrow from '../components/AnchorArrow'
 import Seo from "../components/Seo"
+import {Link} from 'gatsby'
 
 
 const MovmentsPage = ()=> {
@@ -63,7 +64,8 @@ const MovmentsPage = ()=> {
 
       <div className="body">
     {/*<a href="https://testflight.apple.com/v1/invite/ce491cba5b5849fbba234ab39288c7ef5e4a073abcaa422c944b2ec2a21a4c145ee345f7?ct=R6DF954536&advp=10000&platform=ios" target="_blank" rel="noreferrer">Download Movement Classifier 0.9.8 (1)</a>*/}
-      <h3>[Download Coming Soon]</h3>
+
+      <h3><Link to="/testflight">Beta Testing Instructions</Link></h3>
       </div>
     </Layout>
   )
