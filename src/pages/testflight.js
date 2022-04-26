@@ -65,10 +65,9 @@ const InstructionalWrapper = styled.div`
   }
 
   .instructions {
-    color: #009ed9;
+    color: var(--green);
     font-size: 21px;
     font-weight: 400;
-    color: #009ed9;
     text-align: center;
     line-height: 30px;
     padding-top: 20px;
