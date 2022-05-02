@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const DonateBtn = ({
-  txt = 'PayPal',
+  txt = 'Give',
   href = '#',
   className,
 }) => {

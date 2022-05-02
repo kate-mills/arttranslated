@@ -1,18 +1,16 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { MovementVideo, CloseVideo } from '../components/Video'
+import { MovementVideo } from '../components/Video'
 import Seo from '../components/Seo'
 
 import styled from 'styled-components'
 
 const VideoPageWrapper = styled.div`
   & {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
+    display: relative;
+    margin: auto;
     max-width: fit-content;
     max-height: fit-content;
-    height: 100%;
   }
 `
 
@@ -21,7 +19,6 @@ const MovementVideoPage = ()=> {
     <Layout>
     <Seo title="Video: Art Translated Movement Classifier"/>
       <VideoPageWrapper>
-        <CloseVideo goTo="/art-translated-for-movements" />
         <MovementVideo style={{margin: '0 auto'}}/>
       </VideoPageWrapper>
     </Layout>

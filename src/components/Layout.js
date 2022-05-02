@@ -6,12 +6,17 @@ import Footer from './Footer'
 import './layout.css'
 
 
+
 const Layout = ({ children }) => {
   return (
     <>
-    <Navbar/>
+    <header id="header">
+      <Navbar/>
+    </header>
+    <main id="main">
       {children}
-      <Footer />
+    </main>
+    <Footer/>
     </>
   )
 }

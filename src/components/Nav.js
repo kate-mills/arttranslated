@@ -13,6 +13,7 @@ const query = graphql`
         gatsbyImageData(
           layout: CONSTRAINED
           placeholder: BLURRED
+          height: 179 
         )
       }
     }
@@ -24,21 +25,21 @@ const Navbar = ({ className }) => {
 
   return (
     <NavbarWrapper className={className}>
-      <div className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-icon">
             <GatsbyImage image={getImage(logo)} alt="" placeholder="blurred" />
           </Link>
         </div>
-      </div>
     </NavbarWrapper>
   )
 }
 
-const NavbarWrapper = styled.div`
+const NavbarWrapper = styled.nav`
   & {
-    .gatsby-image-wrapper{
+    .navbar-icon{
+      display: block;
       margin: 0 auto;
+      text-align: center;
     }
   }
 `

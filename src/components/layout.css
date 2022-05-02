@@ -30,9 +30,12 @@ body {
   line-height: var(--lineHeight);
   margin: 2rem auto;
   max-height: 100%;
-  max-width: 670px;
-  padding: 2rem;
+  max-width: 770px;
+  padding: 2rem 3rem;
   text-align: left;
+}
+.body{
+  margin: auto;
 }
 a {
   color: var(--green);

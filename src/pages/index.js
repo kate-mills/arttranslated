@@ -7,7 +7,7 @@ import Seo from '../components/Seo'
 
 const IndexPage = ()=> {
   return (
-    <Layout>
+  <Layout>
     <Seo />
       <div className="body">
         Have fun, be smarter, challenge yourself, open up your eyes to a new
@@ -19,36 +19,19 @@ const IndexPage = ()=> {
         Welcome to a new world. Try our new mobile apps leveraging new
         technologies and mobile capabilities.
       </div>
-
+    <div className="body">
       <div className="index-flex-row">
         <div className="index-flex-div">
-          <Link to="/art-translated-for-symbols">
-            <StaticImage
-              src={'../images/for-symbols-icon.png'}
-              alt=""
-              width={100}
-              height={100}
-            />
-          </Link>
-          <Link to="/art-translated-for-symbols"  className="add-before-text">
-            for Symbols
-          </Link>
+          <Link to="/art-translated-for-symbols"><StaticImage src={'../images/for-symbols-icon.png'} alt="" width={100} height={100}/></Link>
+          <Link to="/art-translated-for-symbols"  className="add-before-text">for Symbols</Link>
         </div>
         <div className="index-flex-div">
-          <Link to="/art-translated-for-movements">
-            <StaticImage
-              src={'../images/for-movements-icon.png'}
-              alt=""
-              width={100}
-              height={100}
-            />
-          </Link>
-          <Link to="/art-translated-for-movements" className="add-before-text">
-            for Movements
-          </Link>
+          <Link to="/art-translated-for-movements"><StaticImage src={'../images/for-movements-icon.png'} alt="" width={100} height={100}/></Link>
+          <Link to="/art-translated-for-movements" className="add-before-text">for Movements</Link>
         </div>
       </div>
-    </Layout>
+    </div>
+  </Layout>
   )
 }
 
