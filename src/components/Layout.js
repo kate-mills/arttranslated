@@ -3,6 +3,7 @@
 import React from 'react'
 import Navbar from './Nav'
 import Footer from './Footer'
+import 'normalize.css'
 import './layout.css'
 
 
