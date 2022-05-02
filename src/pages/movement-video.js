@@ -7,10 +7,7 @@ import styled from 'styled-components'
 
 const VideoPageWrapper = styled.div`
   & {
-    display: relative;
     margin: auto;
-    max-width: fit-content;
-    max-height: fit-content;
   }
 `
 
@@ -19,7 +16,7 @@ const MovementVideoPage = ()=> {
     <Layout>
     <Seo title="Video: Art Translated Movement Classifier"/>
       <VideoPageWrapper>
-        <MovementVideo style={{margin: '0 auto'}}/>
+        <MovementVideo id="video" />
       </VideoPageWrapper>
     </Layout>
   )

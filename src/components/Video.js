@@ -31,6 +31,7 @@ export const SymbolVideo = ({ video }) => {
 
 const RegVideoWrapper = styled.div`
   max-width: 100vw;
+  margin: auto;
   width: 325px;
   height: 75vh;
   max-height: 100%;
@@ -39,8 +40,8 @@ const RegVideoWrapper = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
+    margin: 0 auto;
     object-fit: contain;
   }
 `
@@ -64,6 +65,6 @@ const CloseVideoLinkWrapper = styled(Link)`
   right: 0;
   width: 100%;
   text-decoration: none;
-  padding: 2rem 0.3rem 0 2rem;
+  margin-top: 0;
   z-index: 2;
 `
