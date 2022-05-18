@@ -5,8 +5,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from "../components/Seo"
 import {Link} from 'gatsby'
 
-import AnchorArrow from '../components/AnchorArrow'
-
 const SymbolismPage = () => {
 
   return (
@@ -34,11 +32,8 @@ const SymbolismPage = () => {
       </div>
 
       <div className="body">
-        <AnchorArrow
-          goTo="/symbol-video#video"
-          text={'Video of the Art Translated Symbolism Mobile App.'}
-        />
-      </div>
+    <a href="/symbol-video" target="_blank" style={{fontWeight: 'bold'}}> Video of the Art Translated Symbolism Mobile App.</a>
+    </div>
 
       <div className="body">
         <h3>Fast, Concise Search Results Ranked By Probability</h3>
@@ -74,7 +69,11 @@ const SymbolismPage = () => {
       <div className="body">
     {/*<a href="https://testflight.apple.com/v1/invite/628da32604dc431fa6da47f9f9f8f5405594bd6fb61143319f863686c0dbe37e5ed98459?ct=FMWKQHTZSA&advp=10000&platform=ios" target="_blank" rel="noreferrer">Download Art Translated 0.0.3 (1)</a>*/}
 
-      <h3><Link to="/testflight">Beta Testing Instructions</Link></h3>
+      <h3>
+    <Link to="/testflight"
+    style={{fontWeight: 'bold'}}
+    >Beta Testing Instructions</Link>
+    </h3>
       </div>
     </Layout>
   )

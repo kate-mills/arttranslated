@@ -26,8 +26,8 @@ const CloseVideoLinkWrapper = styled(Link)`
 
 export const MovementVideo = ({ video }) => {
   return (
-    <RegVideoWrapper height="673" width="325" id="video">
-      <video width="325" height="673" controls autoPlay loop>
+    <RegVideoWrapper height="100%" width="100%" id="video">
+      <video width="100%" height="100%" controls autoPlay loop>
         <source src={movementVideo} type="video/mp4" />
       </video>
     </RegVideoWrapper>
@@ -36,8 +36,8 @@ export const MovementVideo = ({ video }) => {
 
 export const SymbolVideo = ({ video }) => {
   return (
-    <RegVideoWrapper height="673" width="325" id="video">
-      <video width="325" height="673" controls autoPlay loop>
+    <RegVideoWrapper height="100%" width="100%" id="video">
+      <video width="100%" height="100%" controls autoPlay loop>
         <source src={symbolVideo} type="video/mp4" />
       </video>
     </RegVideoWrapper>

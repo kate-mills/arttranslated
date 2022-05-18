@@ -1,6 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout'
-import { SymbolVideo, CloseVideo } from '../components/Video'
+import { SymbolVideo } from '../components/Video'
 
 import Seo from '../components/Seo'
 
@@ -18,13 +17,12 @@ const VideoPageWrapper = styled.div`
 `
 const SymbolismVideoPage = () => {
   return (
-    <Layout>
+    <>
     <Seo title="Video: Art Translated Symbolism"/>
       <VideoPageWrapper>
-        <CloseVideo goTo="/art-translated-for-symbols"/>
         <SymbolVideo id="video" style={{}} />
       </VideoPageWrapper>
-    </Layout>
+    </>
   )
 }
 
