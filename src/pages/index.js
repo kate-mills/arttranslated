@@ -4,36 +4,49 @@ import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/Seo'
 
-
-const IndexPage = ()=> {
+const IndexPage = () => {
   return (
-  <Layout>
-    <Seo />
+    <Layout>
+      <Seo />
       <div className="body">
-        Have fun, be smarter, challenge yourself, open up your eyes to a new
-        world, communicate with people over time, impress your friends and learn
-        an entirely new language.
+        Welcome to the language of art. Have fun, be smarter, challenge yourself
+        and open up your eyes to a new world. Understand what artists and their
+        patrons wanted to say to you over the centuries of Western Civilization.
+        Learn their language.
       </div>
 
       <div className="body">
-        Welcome to a new world. Try our new mobile apps leveraging new
-        technologies and mobile capabilities.
+        Download our mobile apps and use emerging technologies and mobile
+        devices to advance your appreciation of art and culture.
       </div>
-    <div className="body">
-      <div className="index-flex-row">
-        <div className="index-flex-div">
-          <Link to="/art-translated-for-symbols"><StaticImage src={'../images/for-symbols-icon.png'} alt="" width={100} height={100}/></Link>
-          <Link to="/art-translated-for-symbols"  className="add-before-text">for Symbols</Link>
-        </div>
-        <div className="index-flex-div">
-          <Link to="/art-translated-for-movements"><StaticImage src={'../images/for-movements-icon.png'} alt="" width={100} height={100}/></Link>
-          <Link to="/art-translated-for-movements" className="add-before-text">for Movements</Link>
-        </div>
+
+        <div className="index-flex-row">
+          <div className="index-flex-div">
+            <Link to="art-translated-for-symbols" className="underline bold">
+              Art Translated for Symbols
+            </Link>{' '}
+            Enter a symbol and get the meanings.
+            <StaticImage
+              width={250}
+              src={'../images/golden-apple.png'}
+              alt=""
+            />
+          </div>
+
+          <div className="index-flex-div">
+            <Link to="art-translated-for-movements" className="underline bold">
+    Art Translated for Art Movements.
+            </Link>{' '}Capture an image, understand the style.
+            <StaticImage
+              width={250}
+              src={'../images/high-renaissance.png'}
+              alt=""
+            />
+          </div>
       </div>
-    </div>
-  </Layout>
+
+    </Layout>
   )
 }
-
 
 export default IndexPage

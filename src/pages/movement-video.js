@@ -3,6 +3,7 @@ import { MovementVideo } from '../components/Video'
 import Seo from '../components/Seo'
 
 import styled from 'styled-components'
+import Layout from '../components/Layout'
 
 const VideoPageWrapper = styled.div`
   & {
@@ -17,12 +18,12 @@ const VideoPageWrapper = styled.div`
 
 const MovementVideoPage = ()=> {
   return (
-    <>
+    <Layout>
     <Seo title="Video: Art Translated Movement Classifier"/>
       <VideoPageWrapper>
         <MovementVideo id="video" />
       </VideoPageWrapper>
-    </>
+    </Layout>
   )
 }
 

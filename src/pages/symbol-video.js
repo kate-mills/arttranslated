@@ -3,6 +3,7 @@ import { SymbolVideo } from '../components/Video'
 
 import Seo from '../components/Seo'
 
+import Layout from '../components/Layout'
 import styled from 'styled-components'
 
 const VideoPageWrapper = styled.div`
@@ -17,12 +18,12 @@ const VideoPageWrapper = styled.div`
 `
 const SymbolismVideoPage = () => {
   return (
-    <>
+    <Layout>
     <Seo title="Video: Art Translated Symbolism"/>
       <VideoPageWrapper>
         <SymbolVideo id="video" style={{}} />
       </VideoPageWrapper>
-    </>
+    </Layout>
   )
 }
 
