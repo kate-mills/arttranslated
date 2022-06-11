@@ -22,24 +22,25 @@ const IndexPage = () => {
 
         <div className="index-flex-row">
           <div className="index-flex-div">
-            <Link to="art-translated-for-symbols" className="underline bold">
-              Art Translated for Symbols
+            <Link to="art-translated-for-symbols" className="bold">
+              Art Translated for Symbols &#x3e;
             </Link>{' '}
             Enter a symbol and get the meanings.
             <StaticImage
-              width={250}
-              src={'../images/golden-apple.png'}
+    objectFit={'fill'}
+    cropFocus={'top'}
+              width={300}
+              src={'../images/Mobile-Images/art-translated-for-art-symbols.png'}
               alt=""
             />
           </div>
-
           <div className="index-flex-div">
-            <Link to="art-translated-for-movements" className="underline bold">
-    Art Translated for Art Movements.
+            <Link to="art-translated-for-movements" className="bold">
+    Art Translated for Art Movements &#x3e;
             </Link>{' '}Capture an image, understand the style.
             <StaticImage
-              width={250}
-              src={'../images/high-renaissance.png'}
+              width={300}
+              src={'../images/Mobile-Images/art-translated-for-art-movements.png'}
               alt=""
             />
           </div>

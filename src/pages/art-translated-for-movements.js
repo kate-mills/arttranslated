@@ -14,7 +14,7 @@ const MovmentsPage = ()=> {
       <div className="body" style={{textAlign: 'center'}}>
         <StaticImage
           className="feature-image"
-          src="../images/for-movements-featureImg.jpg"
+          src="../images/full-page/for-movements-featureImg.jpg"
           alt=""
           placeholder="blurred"
           layout="constrained"
@@ -24,7 +24,7 @@ const MovmentsPage = ()=> {
       </div>
       <div className="body">
 
-    <a href="/movement-video" target="_blank" style={{fontWeight: 'bold'}}>Video of Art Translated Movement Classifier Mobile App</a>
+    <a href="/movement-video" target="_blank" style={{fontWeight: 'bold'}}>Video of Art Translated Movement Classifier Mobile App &#x3e;</a>
 
       </div>
       <div className="body">
@@ -66,7 +66,8 @@ const MovmentsPage = ()=> {
       <div className="body">
     {/*<a href="https://testflight.apple.com/v1/invite/ce491cba5b5849fbba234ab39288c7ef5e4a073abcaa422c944b2ec2a21a4c145ee345f7?ct=R6DF954536&advp=10000&platform=ios" target="_blank" rel="noreferrer">Download Movement Classifier 0.9.8 (1)</a>*/}
 
-      <h3><Link to="/testflight" style={{fontWeight: 'bold'}}>Beta Testing Instructions</Link></h3>
+<h3>
+    <Link to="/testflight" style={{fontWeight: 'bold'}} >Beta Testing Instructions  &#x3e;</Link> </h3>
       </div>
     </Layout>
   )

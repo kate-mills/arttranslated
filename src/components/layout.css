@@ -3,10 +3,9 @@
 :root {
   --green: #055c6e;
   --black: #000000;
-  --smFontSize: 1.4rem;  /* annie's value 14px */
-  --lgFontSize: 1.8rem;   /* 18px */
-  --smLineHeight: 1.8;     /* 18px , 24px */
-  --lgLingHeight: 2.4rem;
+  --smFontSize: .85rem;  /* annie's value 14px */
+  --lgFontSize: 1.1rem;   /* 18px */
+  --lineHeight: 1.35;     /* 18px , 24px */
   --letterSpacing: 0.1599999964237213px;
 }
 
@@ -15,39 +14,29 @@
 ::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-  font-family: inherit;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
   text-decoration: none;
-}
-html{
-  font-size: 62.5%; /*10px*/
 }
 
 body {
   min-height: 100%;
   color: #333333;
   font-size:var(--smFontSize);
-  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 300;
   letter-spacing: var(--letterSpacing);
-  line-height: var(--smLineHeight);
+  line-height: var(--lineHeight);
   margin: 2rem auto;
   max-height: 100%;
   max-width: 770px;
-  padding: 2rem 3rem 2rem;
+  padding: 2rem 3rem;
+  text-align: left;
 }
-
-div.main{
-  border: 2px solid grey;
-  margin: 0 auto;
-  display:flex;
-  flex-wrap:wrap;
-
-  justify-content: center;
-  align-items: center;
+body{
+  margin: auto;
 }
-
 a {
   color: var(--green);
   font-size:var(--smFontSize);
@@ -55,56 +44,45 @@ a {
   letter-spacing:var(--letterSpacing);
   text-decoration: none;
 }
-a.bold.underline{
-  font-weight: 600;
-  text-decoration: underline;
-}
-
 h1 {
   color: var(--black);
   font-weight: 400;
-  line-height: var(--lgLineHeight);
+  line-height: 1.8;
   letter-spacing: var(--letterSpacing);
   text-align: center;
 }
 h2, h3 {
   font-size: var(--lgFontSize);
   font-weight: 400;
-  line-height: var(--lgLineHeight);
+  line-height: var(--lineHeight);
   letter-spacing: var(--letterSpacing);
+  text-align: left;
 }
 div.body {
-  padding-bottom: 2.4rem;
+  margin: 2rem auto;
   font-size: var(--smFontSize);
-  line-height: var(--smLineHeight);
+  line-height: var(--lineHeight);
   letter-spacing: var(--letterSpacing);
-
+  text-align: left;
 }
 div.index-flex-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  gap: 50px;
 }
 div.index-flex-div {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 250px;
+  max-width: 300px;
   height: auto;
-}
-div.index-flex-div:first-child{
-  margin-right: 6rem;
-}
-div.index-flex-div a.add-before-text::before {
-  content: 'Art Translated';
-  display: inline-block;
-  text-align: center;
-  margin-top: 0.21rem;
 }
 div.index-flex-div a {
   display: inline-block;
   text-align: center;
   letter-spacing: 0;
   text-decoration: none;
+  font-weight: 600;
 }

@@ -13,7 +13,7 @@ const SymbolismPage = () => {
       <div className="body" style={{textAlign: 'center'}}>
         <StaticImage
           className="feature-image"
-          src="../images/for-symbols-featureImg.jpg"
+          src="../images/full-page/for-symbols-featureImg.jpg"
           alt=""
           placeholder="blurred"
           layout="constrained"
@@ -32,7 +32,7 @@ const SymbolismPage = () => {
       </div>
 
       <div className="body">
-    <a href="/symbol-video" target="_blank" style={{fontWeight: 'bold'}}> Video of the Art Translated Symbolism Mobile App.</a>
+    <a href="/symbol-video" target="_blank" style={{fontWeight: 'bold'}}> Video of the Art Translated Symbolism Mobile App &#x3e;</a>
     </div>
 
       <div className="body">
@@ -70,10 +70,7 @@ const SymbolismPage = () => {
     {/*<a href="https://testflight.apple.com/v1/invite/628da32604dc431fa6da47f9f9f8f5405594bd6fb61143319f863686c0dbe37e5ed98459?ct=FMWKQHTZSA&advp=10000&platform=ios" target="_blank" rel="noreferrer">Download Art Translated 0.0.3 (1)</a>*/}
 
       <h3>
-    <Link to="/testflight"
-    style={{fontWeight: 'bold'}}
-    >Beta Testing Instructions</Link>
-    </h3>
+    <Link to="/testflight" style={{fontWeight: 'bold'}} >Beta Testing Instructions  &#x3e;</Link> </h3>
       </div>
     </Layout>
   )

@@ -8,12 +8,12 @@ import styled from 'styled-components'
 
 const query = graphql`
   {
-    file(relativePath: { eq: "main-logo.jpg" }) {
+    file(relativePath: { eq: "logo.jpg" }) {
       childImageSharp {
         gatsbyImageData(
           layout: CONSTRAINED
           placeholder: BLURRED
-          height: 179 
+          height: 117 
         )
       }
     }
