@@ -22,27 +22,31 @@ const IndexPage = () => {
 
         <div className="index-flex-row">
           <div className="index-flex-div">
-            <Link to="art-translated-for-symbols" className="bold">
-              Art Translated for Symbols &#x3e;
+            <Link to="/art-translated-for-symbols" className="go bold">
+              Art Translated for Symbols
             </Link>{' '}
-            Enter a symbol and get the meanings.
+            <p className="text-center">Enter a symbol and get the meanings.</p>
+    <Link to="/art-translated-for-symbols">
             <StaticImage
     objectFit={'fill'}
     cropFocus={'top'}
               width={300}
               src={'../images/Mobile-Images/art-translated-for-art-symbols.png'}
-              alt=""
+              alt="Example output depicted on mobile phone from Art Translated for Symbols."
             />
+    </Link>
           </div>
           <div className="index-flex-div">
-            <Link to="art-translated-for-movements" className="bold">
-    Art Translated for Art Movements &#x3e;
-            </Link>{' '}Capture an image, understand the style.
+            <Link to="/art-translated-for-movements" className="bold go">
+    Art Translated for Art Movements</Link>
+    <p className="text-center">Capture an image, understand the style.</p>
+    <Link to="/art-translated-for-movements">
             <StaticImage
               width={300}
               src={'../images/Mobile-Images/art-translated-for-art-movements.png'}
-              alt=""
+              alt="Example output depicted on mobile phone from Art Translated for Art Movements."
             />
+    </Link>
           </div>
       </div>
 
