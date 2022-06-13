@@ -3,9 +3,9 @@
 :root {
   --green: #055c6e;
   --black: #000000;
-  --smFontSize: .85rem;  /* annie's value 14px */
-  --lgFontSize: 1.1rem;   /* 18px */
-  --lineHeight: 1.35;     /* 18px , 24px */
+  --smFontSize: 0.85rem; /* annie's value 14px */
+  --lgFontSize: 1.1rem; /* 18px */
+  --lineHeight: 1.35; /* 18px , 24px */
   --letterSpacing: 0.1599999964237213px;
 }
 
@@ -23,7 +23,7 @@
 body {
   min-height: 100%;
   color: #333333;
-  font-size:var(--smFontSize);
+  font-size: var(--smFontSize);
   font-style: normal;
   font-weight: 300;
   letter-spacing: var(--letterSpacing);
@@ -34,14 +34,14 @@ body {
   padding: 2rem 3rem;
   text-align: left;
 }
-body{
+body {
   margin: auto;
 }
 a {
   color: var(--green);
-  font-size:var(--smFontSize);
+  font-size: var(--smFontSize);
   line-height: var(--smLineHeight);
-  letter-spacing:var(--letterSpacing);
+  letter-spacing: var(--letterSpacing);
   text-decoration: none;
 }
 h1 {
@@ -51,7 +51,8 @@ h1 {
   letter-spacing: var(--letterSpacing);
   text-align: center;
 }
-h2, h3 {
+h2,
+h3 {
   font-size: var(--lgFontSize);
   font-weight: 400;
   line-height: var(--lineHeight);
@@ -86,13 +87,32 @@ div.index-flex-div a {
   text-decoration: none;
   font-weight: 600;
 }
-p.text-center{
+.text-center {
   text-align: center;
 }
-a.bold.go{
+a.back,
+a.bold.go {
   font-weight: 600;
 }
-a.go::after{
+a.go::after {
   content: '>';
   padding-left: 1px;
+}
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.btn {
+  color: #7b4a00;
+  font-weight: 400;
+  background: #ff9900;
+  border-radius: 20px;
+  padding: 12px 15.288px;
+  text-decoration: none;
+  text-align: center;
+  margin: 1rem 1rem 1.34rem;
 }

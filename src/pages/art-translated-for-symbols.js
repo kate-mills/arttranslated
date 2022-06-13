@@ -5,8 +5,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from "../components/Seo"
 import {Link} from 'gatsby'
 
-const SymbolismPage = () => {
 
+const SymbolismPage = () => {
   return (
     <Layout>
     <Seo title="Art Translated for Symbols" description="You can now understand a new and unique artistic language now and over history with one of the first mobile apps to convey the meanings, intentions and feelings of symbols in Western art. This app is unique from most books and other reference sources using a structured database of over 120,000 indicators to translate this language in your hand anywhere in the world."/>
@@ -65,12 +65,6 @@ const SymbolismPage = () => {
         <h3>
           No Need For A Lot Of Reading - Just Download the App And Try It.
         </h3>
-      </div>
-      <div className="body">
-    {/*<a href="https://testflight.apple.com/v1/invite/628da32604dc431fa6da47f9f9f8f5405594bd6fb61143319f863686c0dbe37e5ed98459?ct=FMWKQHTZSA&advp=10000&platform=ios" target="_blank" rel="noreferrer">Download Art Translated 0.0.3 (1)</a>*/}
-
-      <h3>
-    <Link to="/testflight" className="go bold">Beta Testing Instructions</Link> </h3>
       </div>
     </Layout>
   )

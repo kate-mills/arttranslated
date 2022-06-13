@@ -4,7 +4,7 @@
 
 import React from 'react'
 import Layout from '../components/Layout'
-//import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/Seo'
 
@@ -12,7 +12,7 @@ import styled from 'styled-components'
 
 const IndexPage = ({ className }) => {
   return (
-    <Layout>
+    <Layout hideFooter={true}>
       <Seo title={`Art Translated Mobile App Beta Testing`} />
       <InstructionalWrapper className={className}>
           <h2 className="instructions">Art Translated Mobile App Beta Testing</h2>
@@ -37,6 +37,10 @@ const IndexPage = ({ className }) => {
         <p className="italic">
           *Once started, a test session lasts 85 days. After that period it's no longer possible to test the app, unless you request a new session.
         </p>
+    </div>
+    <div className="links">
+    <Link className={'btn'} to="/art-translated-for-symbols">Art Translated for Symbols</Link>
+    <Link className={'btn'} to="/art-translated-for-movements">Art Translated for Art Movements</Link>
     </div>
       </InstructionalWrapper>
     </Layout>
@@ -81,6 +85,10 @@ const InstructionalWrapper = styled.div`
   }
   .step-value {
     font-weight: 400;
+  }
+  .links{
+  display: flex;
+  justify-content: space-around;
   }
 `
 

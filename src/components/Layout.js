@@ -2,23 +2,30 @@
 
 import React from 'react'
 import Navbar from './Nav'
-import Footer from './Footer'
+import { Link } from 'gatsby'
 import 'normalize.css'
 import './layout.css'
 
-
-
-const Layout = ({ children }) => {
+const Layout = ({ hideFooter, children }) => {
   return (
-    <>
-    <header id="header">
-      <Navbar/>
-    </header>
-    <main id="main">
-      {children}
+    <React.Fragment>
+      <header id="header">
+        <Navbar />
+      </header>
+      <main id="main">
+    <section>{children}</section>
     </main>
-    <Footer/>
-    </>
+      <footer id="footer">
+        {!hideFooter && (
+          <Link className={'btn'} to="/testflight">
+            Become Beta Tester
+          </Link>
+        )}
+      </footer>
+    </React.Fragment>
   )
+}
+Layout.defaultProps = {
+  hideFooter: false,
 }
 export default Layout

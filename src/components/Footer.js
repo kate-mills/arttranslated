@@ -1,12 +1,12 @@
 import React from 'react'
-import DonateBtn from '../components/DonateBtn'
+import BetaBtn from '../components/BetaBtn'
 
 import styled from 'styled-components'
 
 const Footer = ({ className }) => {
   return (
     <FooterWrapper className={className} id="footer">
-      <DonateBtn txt="Give" href="#" className="donate-btn" />
+    <BetaBtn/>
     </FooterWrapper>
   )
 }
