@@ -6,6 +6,7 @@ import { Link } from 'gatsby'
 import 'normalize.css'
 import './layout.css'
 
+
 const Layout = ({ hideFooter, children }) => {
   return (
     <React.Fragment>
@@ -13,14 +14,15 @@ const Layout = ({ hideFooter, children }) => {
         <Navbar />
       </header>
       <main id="main">
-    <section>{children}</section>
-    </main>
+        <section>{children}</section>
+      </main>
       <footer id="footer">
-        {!hideFooter && (
+        {!hideFooter ? (
           <Link className={'btn'} to="/testflight">
             Become Beta Tester
           </Link>
-        )}
+        ) : <></>
+        }
       </footer>
     </React.Fragment>
   )

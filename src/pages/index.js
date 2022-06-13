@@ -29,7 +29,6 @@ const IndexPage = () => {
     <Link to="/art-translated-for-symbols">
             <StaticImage
     objectFit={'fill'}
-    cropFocus={'top'}
               width={300}
               src={'../images/Mobile-Images/art-translated-for-art-symbols.png'}
               alt="Example output depicted on mobile phone from Art Translated for Symbols."
