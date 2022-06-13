@@ -23,7 +23,7 @@ const MovmentsPage = ()=> {
         />
       </div>
       <div className="body">
-    <a href="/movement-video" target="_blank" className="bold go">Video of Art Translated Movement Classifier Mobile App</a>
+    <Link to="/movement-video" className="bold go">Video of Art Translated Movement Classifier Mobile App</Link>
 
       </div>
       <div className="body">

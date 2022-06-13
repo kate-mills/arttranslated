@@ -1,5 +1,5 @@
 import React from 'react'
-import { MovementVideo } from '../components/Video'
+import Video from '../components/VideoMovement'
 import Seo from '../components/Seo'
 
 import styled from 'styled-components'
@@ -21,7 +21,7 @@ const MovementVideoPage = ()=> {
     <Layout>
     <Seo title="Video: Art Translated Movement Classifier"/>
       <VideoPageWrapper>
-        <MovementVideo id="video" />
+        <Video id="video" />
       </VideoPageWrapper>
     </Layout>
   )

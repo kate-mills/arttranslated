@@ -1,5 +1,5 @@
 import React from 'react'
-import { SymbolVideo } from '../components/Video'
+import Video from '../components/VideoSymbol'
 
 import Seo from '../components/Seo'
 
@@ -21,7 +21,7 @@ const SymbolismVideoPage = () => {
     <Layout>
     <Seo title="Video: Art Translated Symbolism"/>
       <VideoPageWrapper>
-        <SymbolVideo id="video" style={{}} />
+        <Video id="video"/>
       </VideoPageWrapper>
     </Layout>
   )

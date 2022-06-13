@@ -32,7 +32,7 @@ const SymbolismPage = () => {
       </div>
 
       <div className="body">
-    <a href="/symbol-video" target="_blank" className="go bold"> Video of the Art Translated Symbolism Mobile App</a>
+    <Link to="/symbol-video" className="go bold" title="Watch Video of the Art Translated Symbolism Mobile App">Video of the Art Translated Symbolism Mobile App</Link>
     </div>
 
       <div className="body">
