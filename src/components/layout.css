@@ -27,15 +27,19 @@ body {
   font-weight: 300;
   letter-spacing: var(--letterSpacing);
   line-height: var(--lineHeight);
-  margin: 2rem auto;
+  margin: auto;
   max-height: 100%;
   max-width: 770px;
   padding: 2rem 3rem;
   text-align: left;
 }
-body {
-  margin: auto;
+div.body{
+  margin: 2rem auto;
 }
+div.body p{
+  margin: 1rem auto;
+}
+
 a {
   color: var(--green);
   font-size: var(--smFontSize);
