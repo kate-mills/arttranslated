@@ -19,9 +19,9 @@ const FooterWrapper = styled.footer`
   margin: 2rem auto 1.34rem;
 
   & > a {
-    color: #7b4a00;
+    color: var(--white);
     font-weight: 400;
-    background: #ff9900;
+    background: var(--green);
     border-radius: 20px;
     padding: 12px 15.288px;
     text-decoration: none;

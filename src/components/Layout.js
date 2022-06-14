@@ -13,7 +13,7 @@ const Layout = ({ hideFooter, children }) => {
         <Navbar />
       </header>
       <main id="main">
-        <section>{children}</section>
+        {children}
       </main>
     {!hideFooter && <Footer/>}
     </React.Fragment>
