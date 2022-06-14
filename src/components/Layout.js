@@ -2,10 +2,9 @@
 
 import React from 'react'
 import Navbar from './Nav'
-import { Link } from 'gatsby'
+import Footer from './Footer'
 import 'normalize.css'
 import './layout.css'
-
 
 const Layout = ({ hideFooter, children }) => {
   return (
@@ -16,14 +15,7 @@ const Layout = ({ hideFooter, children }) => {
       <main id="main">
         <section>{children}</section>
       </main>
-      <footer id="footer">
-        {!hideFooter ? (
-          <Link className={'btn'} to="/testflight">
-            Become Beta Tester
-          </Link>
-        ) : <></>
-        }
-      </footer>
+    {!hideFooter && <Footer/>}
     </React.Fragment>
   )
 }

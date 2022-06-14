@@ -33,13 +33,6 @@ body {
   padding: 2rem 3rem;
   text-align: left;
 }
-div.body{
-  margin: 2rem auto;
-}
-div.body p{
-  margin-top: 8px;
-}
-
 a {
   color: var(--green);
   font-family: 'Montserrat', sans-serif;
@@ -48,9 +41,6 @@ a {
   line-height: 14.63px;
   letter-spacing: var(--letterSpacing);
   text-decoration: none;
-}
-.go-arrow{
-  margin-left: 2px;
 }
 h1 {
   color: var(--black);
@@ -69,52 +59,42 @@ h3 {
   line-height: var(--lgLineHeight);
   text-align: left;
 }
-div.body {
+.body {
   margin: 2rem auto;
   font-size: var(--smFontSize);
   line-height: var(--smLineHeight);
   letter-spacing: var(--letterSpacing);
   text-align: left;
 }
-div.index-flex-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-}
-div.index-flex-div {
+.index-flex-div {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 300px;
   height: auto;
 }
-div.index-flex-div a {
+.index-flex-div a {
   display: inline-block;
   text-align: center;
   letter-spacing: 0;
   text-decoration: none;
   font-weight: 600;
 }
+.index-flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+div.section{}
+div.section h3.section-heading{}
+div.body p{
+  margin-top: 8px;
+}
+.go-arrow{
+  margin-left: 2px;
+}
 .text-center {
   text-align: center;
 }
-footer {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: 2rem auto 1.34rem;
-}
-.btn {
-  color: #7b4a00;
-  font-weight: 400;
-  background: #ff9900;
-  border-radius: 20px;
-  padding: 12px 15.288px;
-  text-decoration: none;
-  text-align: center;
-}
-
-div.section{}
-div.section h3.section-heading{}

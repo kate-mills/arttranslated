@@ -6,6 +6,7 @@ import Seo from '../components/Seo'
 import { Link } from 'gatsby'
 import GoArrow from '../components/GoArrow'
 
+
 const SymbolismPage = () => {
   return (
     <Layout>
@@ -92,5 +93,6 @@ const SymbolismPage = () => {
     </Layout>
   )
 }
+
 
 export default SymbolismPage
