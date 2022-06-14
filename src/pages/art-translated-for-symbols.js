@@ -14,7 +14,6 @@ const SymbolismPage = () => {
         description="You can now understand a new and unique artistic language now and over history with one of the first mobile apps to convey the meanings, intentions and feelings of symbols in Western art. This app is unique from most books and other reference sources using a structured database of over 120,000 indicators to translate this language in your hand anywhere in the world."
       />
       <section>
-        <h1>Art Translated For Symbols</h1>
         <div className="section-feature-image drop-shadow">
           <StaticImage
             className="feature-image"
@@ -26,7 +25,7 @@ const SymbolismPage = () => {
             height={336}
           />
         </div>
-
+        <h1>Art Translated For Symbols</h1>
         <div className="article">
           <h3 className="article-heading">
             Translate The Language of Symbols Using Your Mobile Phone
