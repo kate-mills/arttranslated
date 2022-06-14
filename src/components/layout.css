@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans&display=swap');
 :root {
   --green: #055c6e;
   --black: #000000;
@@ -6,7 +6,7 @@
   --smFontSize: 15px;
   --smLineHeight: 20.43px;
   --lgFontSize: 16px;
-  --lgLineHeight: 19.5px;
+  --lgLineHeight: 18px;
   --letterSpacing: 0.16px;
 }
 *,
@@ -72,25 +72,19 @@ a {
 h1 {
   color: var(--black);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 30px;
   letter-spacing: var(--letterSpacing);
-  line-height: var(--lgLineHeight);
+  line-height: 30px;
   text-align: center;
+  padding: 25.5px 0 14px;
 }
 h2,
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: var(--lgFontSize);
-  font-weight: 400;
   letter-spacing: var(--letterSpacing);
   line-height: var(--lgLineHeight);
-  text-align: left;
-}
-.body {
-  font-size: var(--smFontSize);
-  letter-spacing: var(--letterSpacing);
-  line-height: var(--smLineHeight);
-  margin: 2rem auto;
   text-align: left;
 }
 /* 2 columns */
@@ -137,5 +131,22 @@ h3 {
   /*border: 16px solid var(--white); background: var(--white);*/
   margin-top: .5rem;
 }
-div.section { }
-div.section h3.section-heading { }
+.article{
+  font-size: var(--smFontSize);
+  letter-spacing: var(--letterSpacing);
+  line-height: var(--smLineHeight);
+  margin: 2rem auto;
+  text-align: left;
+}
+p.article-text{
+  margin-top: 20px;
+}
+div.article  p.article-text:nth-of-type(1){
+  margin-top: 13px;
+}
+.section-feature-image{
+  background: var(--white);
+  width: fit-content;
+  padding: 5px;
+  margin: 2rem  auto 0;
+}
