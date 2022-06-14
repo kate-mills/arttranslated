@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import Seo from '../components/Seo'
 import { Link } from 'gatsby'
+import GoArrow from '../components/GoArrow'
 
 const SymbolismPage = () => {
   return (
@@ -23,9 +24,11 @@ const SymbolismPage = () => {
           height={336}
         />
       </div>
-      <div className="body">
-        <h3>Translate The Language of Symbols Using Your Mobile Phone</h3>
-        <p>
+      <div className="section">
+        <h3 className="section-heading">
+          Translate The Language of Symbols Using Your Mobile Phone
+        </h3>
+        <p className="section-text">
           Better understand and learn a new language using this fun new mobile
           app to “listen” in on the ideas, meanings, intentions and feelings
           that artists and their patrons want you to hear from the past
@@ -37,14 +40,16 @@ const SymbolismPage = () => {
         </p>
       </div>
 
-      <div className="body">
-        <Link
-          to="/symbol-video"
-          className="go bold"
-          title="Watch Video of the Art Translated Symbolism Mobile App"
-        >
-          Click here to see video of how it works
-        </Link>
+      <div className="section">
+        <p className="section-text">
+          <Link
+            to="/symbol-video"
+            className="section-link"
+            title="Watch Video of the Art Translated Symbolism Mobile App">
+            Click here to see video of how it works
+    <GoArrow/>
+          </Link>
+        </p>
       </div>
 
       <div className="body">

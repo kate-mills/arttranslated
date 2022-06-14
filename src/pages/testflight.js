@@ -9,36 +9,56 @@ import Seo from '../components/Seo'
 
 import styled from 'styled-components'
 
-
-
 const IndexPage = ({ className }) => {
   return (
     <Layout hideFooter={true}>
       <Seo title={`Art Translated Mobile App Beta Testing`} />
+
       <InstructionalWrapper className={className}>
-          <h2 className="instructions">Art Translated Mobile App Beta Testing</h2>
-          <div className="icon">
-            <StaticImage
-              src={'../images/testflight.png'}
-              alt=""
-              width={100}
-              height={100}
-            />
-          </div>
-    <div className="body">
-        <h3 className="list-header">Download the TestFlight App And Start Testing</h3>
-    <p className="italic">Invited testers will receive an email with a link to test one or both of our apps.</p>
-        <ol>
-          <li>To be able to test, you will first have to download the TestFlight app to your mobile device.</li>
-          <li>After accepting the invitation, you will be directed to the TestFlight app and you will be prompted to install the app to be tested.</li>
-          <li>The app will appear on your phone's springboard (marked with an orange bullet), and also in the TestFlight app.</li>
-        </ol>
-    </div>
-    <div className="body">
-        <p className="italic">
-          *Once started, a test session lasts 85 days. After that period it's no longer possible to test the app, unless you request a new session.
+        <h1>Become An Art Translated Beta Tester</h1>
+        <p className="text">
+          Thank you for your interest in beta testing our fun new
+          application!!!!
         </p>
-    </div>
+        <h2 className="instructions">How To Become A Beta Tester</h2>
+        <div className="icon">
+          <StaticImage
+            src={'../images/testflight.png'}
+            alt=""
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className="body">
+          <h3 className="list-header">
+            Download the TestFlight App And Start Testing
+          </h3>
+          <p className="italic"></p>
+          <ol>
+            <li>
+              Send an email to:{' '}
+              <a href="mailto:info.arttranslated@gmail.com?subject=I want to be a beta tester!&body=All we need is your name and email below">
+                info.arttranslated@gmail.com
+              </a>{' '}
+              telling us the email address and name you want us to use.
+            </li>
+            <li>Download Apple’s TestFlight in Apple’s App Store. TestFlight is Apple’s testing app and will be how we deliver the app(s) and updates.</li>
+            <li> We will then send you an invite to your email address.  Please download the app(s) within 48 	hours or the invitation lapses.</li>
+
+            <li>
+              The app will appear on your phone's springboard (marked with an
+              orange bullet), and also in the TestFlight app.
+            </li>
+          </ol>
+        </div>
+        <div className="body">
+          <p className="italic">
+            *Once started, a test session lasts 85 days. After that period it's
+            no longer possible to test the app, unless you request a new
+            session.
+          </p>
+        </div>
+
       </InstructionalWrapper>
     </Layout>
   )
@@ -46,21 +66,21 @@ const IndexPage = ({ className }) => {
 
 const InstructionalWrapper = styled.div`
   margin: 3rem auto;
-  div{
+  div {
     margin: 0 auto;
   }
-  .list-header{
+  .list-header {
     margin-top: 2rem;
     text-align: center;
   }
-  ol{
-    margin:1rem auto;
+  ol {
+    margin: 1rem auto;
     margin-left: 2rem;
   }
-  .icon{
+  .icon {
     text-align: center;
   }
-  .italic{
+  .italic {
     font-style: italic;
     margin-top: 1rem;
   }

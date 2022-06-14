@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/Seo'
+import GoArrow from '../components/GoArrow'
 
 const IndexPage = () => {
   return (
@@ -20,35 +21,39 @@ const IndexPage = () => {
         devices to advance your appreciation of art and culture.
       </div>
 
-        <div className="index-flex-row">
-          <div className="index-flex-div">
-            <Link to="/art-translated-for-symbols" className="go bold">
-              Art Translated for Symbols
-            </Link>{' '}
-            <p className="text-center">Enter a symbol and get the meanings.</p>
-    <Link to="/art-translated-for-symbols">
+      <div className="index-flex-row">
+        <div className="index-flex-div">
+          <Link to="/art-translated-for-symbols">
+            Art Translated for Symbols
+            <GoArrow />
+          </Link>{' '}
+          <p className="text-center">Enter a symbol and get the meanings.</p>
+          <Link to="/art-translated-for-symbols">
             <StaticImage
-    objectFit={'fill'}
+              objectFit={'fill'}
               width={300}
               src={'../images/Mobile-Images/art-translated-for-art-symbols.png'}
               alt="Example output depicted on mobile phone from Art Translated for Symbols."
             />
-    </Link>
-          </div>
-          <div className="index-flex-div">
-            <Link to="/art-translated-for-movements" className="bold go">
-    Art Translated for Art Movements</Link>
-    <p className="text-center">Capture an image, understand the style.</p>
-    <Link to="/art-translated-for-movements">
+          </Link>
+        </div>
+        <div className="index-flex-div">
+          <Link to="/art-translated-for-movements">
+            Art Translated for Art Movements
+            <GoArrow />
+          </Link>
+          <p className="text-center">Capture an image, understand the style.</p>
+          <Link to="/art-translated-for-movements">
             <StaticImage
               width={300}
-              src={'../images/Mobile-Images/art-translated-for-art-movements.png'}
+              src={
+                '../images/Mobile-Images/art-translated-for-art-movements.png'
+              }
               alt="Example output depicted on mobile phone from Art Translated for Art Movements."
             />
-    </Link>
-          </div>
+          </Link>
+        </div>
       </div>
-
     </Layout>
   )
 }

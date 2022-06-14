@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/Seo'
 import { Link } from 'gatsby'
+import GoArrow from '../components/GoArrow'
 
 const MovmentsPage = () => {
   return (
@@ -23,8 +24,9 @@ const MovmentsPage = () => {
         />
       </div>
       <div className="body">
-        <Link to="/movement-video" className="bold go">
+        <Link to="/movement-video">
           Video of Art Translated Movement Classifier Mobile App
+          <GoArrow />
         </Link>
       </div>
       <div className="body">
