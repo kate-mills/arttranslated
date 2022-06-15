@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Footer = ({ className }) => {
   return (
     <FooterWrapper>
-      <Link to="/testflight">
+      <Link to="/become-beta-tester">
         Become Beta Tester
       </Link>
     </FooterWrapper>
