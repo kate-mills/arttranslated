@@ -28,7 +28,9 @@ const IndexPage = () => {
               Art Translated for Symbols
               <GoArrow />
             </Link>{' '}
-            <p className="text-center">Enter a symbol and get the meanings.</p>
+            <p className="text-center tiny-font">
+              Enter a symbol and get the meanings.
+            </p>
             <div className="background-white drop-shadow">
               <Link to="/art-translated-for-symbols">
                 <StaticImage
@@ -45,7 +47,7 @@ const IndexPage = () => {
               Art Translated for Art Movements
               <GoArrow />
             </Link>
-            <p className="text-center">
+            <p className="text-center tiny-font">
               Capture an image, understand the style.
             </p>
 

@@ -2,12 +2,15 @@
 :root {
   --green: #055c6e;
   --black: #000000;
-  --white: #FFFFFF;
+  --white: #ffffff;
+  --orange: #f3a488;
   --smFontSize: 15px;
   --smLineHeight: 20.43px;
   --lgFontSize: 16px;
   --lgLineHeight: 18px;
   --letterSpacing: 0.16px;
+  --tinyFontSize: 12px;
+  --tinyLineHeight: 12px;
 }
 *,
 ::after,
@@ -21,7 +24,9 @@
   text-decoration: none;
 }
 body {
-  border: 16px solid #005A6D;
+  background-color: var(--white);
+  border: 16px solid var(--green);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
   color: #333333;
   min-height: 100%;
   font-size: var(--smFontSize);
@@ -37,8 +42,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   position: relative;
 }
-body::before{
-  border: 8px solid #F3A488;
+body::before {
+  border: 8px solid var(--orange);
+  background: var(--white);
   content: '';
   position: absolute;
   margin: auto;
@@ -50,7 +56,6 @@ body::before{
   padding: 2rem 2.75rem;
   z-index: -2;
 }
-
 p {
   margin-top: 8px;
 }
@@ -104,7 +109,6 @@ h3 {
   max-width: 300px;
   background: var(--white);
 }
-
 /* index page -> mobile images & centered titles above image */
 .flex-row .flex-div > a {
   display: inline-block;
@@ -114,39 +118,40 @@ h3 {
   min-width: 100%;
   text-decoration: none;
 }
-
-.flex-row .flex-div p{
-  margin: 0 auto .5rem;
+.flex-row .flex-div p {
+  margin: 0 auto 0.5rem;
 }
 .flex-row .flex-div img {
   border: 15px solid var(--white);
 }
-.text-center {
-  text-align: center;
-}
-.drop-shadow{
+.drop-shadow {
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
 }
-.background-white{
-  /*border: 16px solid var(--white); background: var(--white);*/
-  margin-top: .5rem;
+.background-white {
+  margin-top: 0.5rem;
 }
-.article{
+.article {
   font-size: var(--smFontSize);
   letter-spacing: var(--letterSpacing);
   line-height: var(--smLineHeight);
   margin: 2rem auto;
   text-align: left;
 }
-p.article-text{
+p.article-text {
   margin-top: 20px;
 }
-div.article  p.article-text:nth-of-type(1){
+div.article p.article-text:nth-of-type(1) {
   margin-top: 13px;
 }
-.section-feature-image{
+.section-feature-image {
   background: var(--white);
   width: fit-content;
   padding: 5px;
-  margin: 2rem  auto 0;
+  margin: 2rem auto 0;
+}
+p.text-center.tiny-font {
+  text-align: center;
+  font-size: var(--tinyFontSize);
+  line-height: var(--tinyLineHeight);
+  margin: 0 auto;
 }
