@@ -8,7 +8,7 @@ import styled from 'styled-components'
 const MovementVideo = () => {
   return(
     <RegVideoWrapper height="100%" width="100%">
-      <video width="100%" height="100%" controls loop>
+      <video width="100%" height="100%" controls muted autoPlay>
         <source src={video} type="video/mp4" />
       </video>
     </RegVideoWrapper>

@@ -69,6 +69,7 @@ const IndexPage = ({ className }) => {
             Here are some ideas to get you started and help you understand the
             scope and range of these simple but powerful apps.
           </p>
+
           <div className="art-translated-icons">
             <StaticImage
               className="icon"
@@ -89,6 +90,9 @@ const IndexPage = ({ className }) => {
               .
             </p>
           </div>
+
+
+
           <div className="art-translated-icons">
             <StaticImage
               className="icon"
@@ -105,6 +109,8 @@ const IndexPage = ({ className }) => {
               phone’s image libraries.
             </p>
           </div>
+
+
         </div>
 
         <div className="article">
@@ -143,9 +149,6 @@ const IndexPage = ({ className }) => {
 
 const InstructionalArticle = styled.article`
   margin: 3rem auto;
-  div {
-    margin: 0 auto;
-  }
   .list-header {
     margin-top: 2rem;
     text-align: center;
@@ -194,23 +197,28 @@ const InstructionalArticle = styled.article`
   .art-translated-icons {
     align-items: center;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: flex-start;
-    min-height: 100px;
+    min-height: 60px;
     p {
       margin-top: 0;
       margin-left: 1rem;
+      padding-top 1rem;
       span.theme-color {
         color: var(--green);
         font-weight: 600;
       }
     }
     .gatsby-image-wrapper.icon {
-      width: 100px;
-      height: 100px;
+      min-width: 50px;
+      min-height: 50px;
       img {
         object-fit: contain !important;
       }
+    }
+  }
+  .art-translated-icons {
+    @media (min-width: 700) {
+      flex-direction: row;
     }
   }
 `
