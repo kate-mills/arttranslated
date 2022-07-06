@@ -3,7 +3,6 @@ import Layout from '../components/Layout'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/Seo'
-import GoArrow from '../components/GoArrow'
 
 const IndexPage = () => {
   return (
@@ -24,15 +23,14 @@ const IndexPage = () => {
         </article>
         <article className="flex-row">
           <div className="flex-div">
-            <Link to="/art-translated-for-symbols">
-              Art Translated for Symbols
-              <GoArrow />
+            <Link to="/art-translated-for-symbols" title="Go to Art Translated for Symbols page">
+              <h2 className="app__name">Art Translated for Symbols</h2>
             </Link>{' '}
-            <p className="text-center tiny-font">
+            <p className="app__description text-center tiny-font">
               Enter a symbol and get the meanings.
             </p>
             <div className="background-white drop-shadow">
-              <Link to="/art-translated-for-symbols">
+              <Link className="app__img--link" to="/art-translated-for-symbols">
                 <StaticImage
                   className="drop-shadow"
                   width={300}
@@ -44,15 +42,14 @@ const IndexPage = () => {
           </div>
           <div className="flex-div">
             <Link to="/art-translated-for-movements">
-              Art Translated for Art Movements
-              <GoArrow />
+              <h2 className="app__name">Art Translated for Art Movements</h2>
             </Link>
-            <p className="text-center tiny-font">
+            <p className="app__description text-center tiny-font">
               Capture an image, understand the style.
             </p>
 
             <div className="background-white drop-shadow">
-              <Link to="/art-translated-for-movements">
+              <Link to="/art-translated-for-movements" className="app__img--link">
                 <StaticImage
                   className="drop-shadow"
                   width={300}

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans&display=swap');
 :root {
   --green: #055c6e;
@@ -9,8 +10,8 @@
   --lgFontSize: 16px;
   --lgLineHeight: 18px;
   --letterSpacing: 0.16px;
-  --tinyFontSize: 12px;
-  --tinyLineHeight: 12px;
+  --tinyFontSize: 14px;
+  --tinyLineHeight: 14px;
 }
 *,
 ::after,
@@ -37,7 +38,7 @@ body {
   margin: auto;
   max-height: 100%;
   max-width: 770px;
-  padding: 2rem 2.75rem;
+  padding: 2rem 2.75rem 0;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   position: relative;
@@ -53,7 +54,7 @@ body::before {
   left: 0;
   height: 100%;
   margin: 0 auto;
-  padding: 2rem 2.75rem;
+  padding: 2rem 2.75rem 0;
   z-index: -2;
 }
 p {
@@ -88,6 +89,7 @@ h2,
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: var(--lgFontSize);
+  font-weight: 600;
   letter-spacing: var(--letterSpacing);
   line-height: var(--lgLineHeight);
   text-align: left;
@@ -128,6 +130,7 @@ h3 {
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
 }
 .background-white {
+  position:relative;
   margin-top: 0.5rem;
 }
 .article {
@@ -149,9 +152,17 @@ div.article p.article-text:nth-of-type(1) {
   padding: 5px;
   margin: 2rem auto 0;
 }
-p.text-center.tiny-font {
+.app__name{
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.03rem;
+  padding-bottom: 10px;
+  padding-top: 2px;
+  text-decoration: underline;
+}
+.app__description{
   text-align: center;
   font-size: var(--tinyFontSize);
   line-height: var(--tinyLineHeight);
-  margin: 0 auto;
+  margin: 5px auto;
 }
