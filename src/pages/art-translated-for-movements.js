@@ -20,7 +20,7 @@ const MovmentsPage = () => {
           <StaticImage
             className="feature-image"
             src="../images/full-page/for-movements-featureImg.jpg"
-            alt=""
+            alt="Three horizontal snapshots with arrows describing mobile application flow for Art Translated Movent Classifier App."
             placeholder="blurred"
             layout="constrained"
             format="webp"

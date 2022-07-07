@@ -21,7 +21,7 @@ const SymbolismPage = () => {
             <StaticImage
               className="feature-image"
               src="../images/full-page/for-symbols-featureImg.jpg"
-              alt=""
+              alt="Three horizontal snapshots with arrows describing mobile application flow for Art Translated Symbolism App."
               placeholder="blurred"
               layout="constrained"
               format="webp"
