@@ -26,6 +26,7 @@ const SymbolismPage = () => {
               layout="constrained"
               format="webp"
               height={336}
+              title="Art Translated Symbolism App Flow"
             />
           </Link>
         </div>

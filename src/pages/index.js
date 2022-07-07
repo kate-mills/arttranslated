@@ -7,7 +7,7 @@ import Seo from '../components/Seo'
 const IndexPage = () => {
   return (
     <Layout>
-      <Seo />
+      <Seo title="Art Translated - Understand the Language of Art"/>
       <section className="welcome">
         <article className="flex-row">
           <p>
@@ -30,18 +30,19 @@ const IndexPage = () => {
               Enter a symbol and get the meanings.
             </p>
             <div className="background-white drop-shadow">
-              <Link className="app__img--link" to="/art-translated-for-symbols">
+              <Link className="app__img--link" to="/art-translated-for-symbols" title="Go to Art Translated for Symbols page">
                 <StaticImage
                   className="drop-shadow"
                   width={300}
                   src={'../images/UI/art-translated-for-symbols.png'}
                   alt="Example output depicted on mobile phone from Art Translated for Symbols."
+                  title="Art Translated for Symbols Example Output"
                 />
               </Link>
             </div>
           </div>
           <div className="flex-div">
-            <Link to="/art-translated-for-movements">
+            <Link to="/art-translated-for-movements" title="Go to Art Translated for Art Movements page">
               <h2 className="app__name">Art Translated for Art Movements</h2>
             </Link>
             <p className="app__description text-center tiny-font">
@@ -49,12 +50,13 @@ const IndexPage = () => {
             </p>
 
             <div className="background-white drop-shadow">
-              <Link to="/art-translated-for-movements" className="app__img--link">
+              <Link to="/art-translated-for-movements" className="app__img--link"  title="Go to Art Translated for Art Movements page">
                 <StaticImage
                   className="drop-shadow"
                   width={300}
                   src={'../images/UI/art-translated-for-art-movements.png'}
                   alt="Example output depicted on mobile phone from Art Translated for Art Movements."
+                  title="Art Translated for Art Movements Example Output"
                 />
               </Link>
             </div>

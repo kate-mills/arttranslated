@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Footer = ({ className }) => {
   return (
     <FooterWrapper>
-      <Link to="/become-beta-tester">
+      <Link to="/become-beta-tester" title="Become Beta Tester">
         Become Beta Tester
       </Link>
     </FooterWrapper>
@@ -16,7 +16,7 @@ const FooterWrapper = styled.footer`
   align-items: center;
   display: flex;
   justify-content: center;
-  margin: 2rem auto 1.34rem;
+  margin: 2.5rem auto 1.34rem;
 
   & > a {
     color: var(--white);
