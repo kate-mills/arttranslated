@@ -27,7 +27,7 @@ const Navbar = ({ className }) => {
     <NavbarWrapper className={className}>
         <div className="navbar-container">
           <Link to="/" className="navbar-icon">
-            <GatsbyImage image={getImage(logo)} alt="" placeholder="blurred" />
+            <GatsbyImage image={getImage(logo)} alt="Art Translated - Understand the Language of Art logo" placeholder="blurred" role="presentation" title="Art Translated - Understand the Language of Art"/>
           </Link>
         </div>
     </NavbarWrapper>

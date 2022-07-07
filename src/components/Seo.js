@@ -53,13 +53,17 @@ const Seo = ({ title, description, image, snippet, noindex }) => {
     <Helmet title={seo.title} htmlAttributes={{ lang: 'en' }}>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
+
       {noindex && <meta name="robots" content="noindex" />}
       {snippet && <script type="application/ld+json">{snippet}</script>}
 
       {seo.title && <meta property="og:title" content={seo.title} />}
+      <title>{seo.title}</title>
+
         {seo.description && (
           <meta property="og:description" content={seo.description} />
         )}
+
       {seo.image && <meta property="og:image" content={seo.image} />}
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" />
