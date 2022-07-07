@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Open+Sans&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans&display=swap');
 :root {
   --green: #055c6e;
   --black: #000000;
@@ -130,7 +130,7 @@ h3 {
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
 }
 .background-white {
-  position:relative;
+  position: relative;
   margin-top: 0.5rem;
 }
 .article {
@@ -152,7 +152,7 @@ div.article p.article-text:nth-of-type(1) {
   padding: 5px;
   margin: 2rem auto 0;
 }
-.app__name{
+.app__name {
   text-align: center;
   font-weight: 600;
   font-size: 1.03rem;
@@ -160,9 +160,17 @@ div.article p.article-text:nth-of-type(1) {
   padding-top: 2px;
   text-decoration: underline;
 }
-.app__description{
+.app__description {
   text-align: center;
   font-size: var(--tinyFontSize);
   line-height: var(--tinyLineHeight);
   margin: 5px auto;
+}
+.watch-video {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 600;
+  font-family: 'Montserrat';
 }

@@ -4,7 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import Seo from '../components/Seo'
 import { Link } from 'gatsby'
-import GoArrow from '../components/GoArrow'
 
 const SymbolismPage = () => {
   return (
@@ -15,15 +14,20 @@ const SymbolismPage = () => {
       />
       <section>
         <div className="section-feature-image drop-shadow">
-          <StaticImage
-            className="feature-image"
-            src="../images/full-page/for-symbols-featureImg.jpg"
-            alt=""
-            placeholder="blurred"
-            layout="constrained"
-            format="webp"
-            height={336}
-          />
+          <Link
+            to="/symbol-video"
+            title="Watch Video of the Art Translated Symbolism Mobile App"
+          >
+            <StaticImage
+              className="feature-image"
+              src="../images/full-page/for-symbols-featureImg.jpg"
+              alt=""
+              placeholder="blurred"
+              layout="constrained"
+              format="webp"
+              height={336}
+            />
+          </Link>
         </div>
         <h1>Art Translated For Symbols</h1>
         <div className="article">
@@ -46,11 +50,10 @@ const SymbolismPage = () => {
           <p className="article-text">
             <Link
               to="/symbol-video"
-              className="section-link"
+              className="section-link watch-video"
               title="Watch Video of the Art Translated Symbolism Mobile App"
             >
               Click here to see video of how it works
-              <GoArrow />
             </Link>
           </p>
         </div>

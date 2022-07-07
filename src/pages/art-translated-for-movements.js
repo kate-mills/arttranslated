@@ -3,7 +3,6 @@ import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/Seo'
 import { Link } from 'gatsby'
-import GoArrow from '../components/GoArrow'
 
 const MovmentsPage = () => {
   return (
@@ -14,6 +13,10 @@ const MovmentsPage = () => {
       />
       <section>
         <div className="section-feature-image drop-shadow">
+          <Link
+            to="/movement-video"
+            title="Watch Video of the Art Translated for Movements Mobile App"
+          >
           <StaticImage
             className="feature-image"
             src="../images/full-page/for-movements-featureImg.jpg"
@@ -23,14 +26,13 @@ const MovmentsPage = () => {
             format="webp"
             height={336}
           />
+    </Link>
         </div>
         <h1>Art Translated for Art Movements</h1>
         <div className="article">
           <p className="article-text">
-            <Link to="/movement-video">
-              Video of Art Translated Movement Classifier Mobile App
-              <GoArrow />
-            </Link>
+            <Link to="/movement-video" title="Watch Video of Art Translated Movement Classifier Mobile App" className="watch-video">
+              Video of Art Translated Movement Classifier Mobile App</Link>
           </p>
         </div>
         <div className="article">
