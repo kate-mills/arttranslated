@@ -174,3 +174,18 @@ div.article p.article-text:nth-of-type(1) {
   font-weight: 600;
   font-family: 'Montserrat';
 }
+#footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem auto 1.34rem;
+}
+#footer > a {
+  color: var(--white);
+  font-weight: 400;
+  background: var(--green);
+  border-radius: 20px;
+  padding: 12px 15.288px;
+  text-decoration: none;
+  text-align: center;
+}

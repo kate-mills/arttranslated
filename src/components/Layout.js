@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Navbar from './Nav'
-import BecomeBetaTesterBlock from './BecomeBetaTesterBlock'
+import { Link } from 'gatsby'
 import 'normalize.css'
 import './layout.css'
 
@@ -14,7 +14,11 @@ const Layout = ({ isBetaTesterPage, children }) => {
       </header>
       <main id="main">{children}</main>
       <footer id="footer">
-        {!isBetaTesterPage && <BecomeBetaTesterBlock />}
+        {!isBetaTesterPage && (
+          <Link to="/become-beta-tester" title="Become Beta Tester">
+            Become Beta Tester
+          </Link>
+        )}
       </footer>
     </React.Fragment>
   )

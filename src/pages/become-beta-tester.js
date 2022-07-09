@@ -27,9 +27,18 @@ const IndexPage = ({ className }) => {
               Send an email to:{' '}
               <a href="mailto:info.arttranslated@gmail.com?subject=I want to be a beta tester!&body=All we need is your name and email below">
                 info.arttranslated@gmail.com
-              </a>{' '}
+              </a>
+              {` `}
               telling us the email address and name you want us to use.
             </li>
+            <div id="become-beta-tester-email-block">
+              <a
+                href="mailto:info.arttranslated@gmail.com?subject=I want to be a beta tester!&body=All we need is your name and email below"
+                className="become-beta-tester-email-button"
+              >
+                Become Beta Tester
+              </a>
+            </div>
             <li>
               Download Apple’s TestFlight in Apple’s App Store.
               <br />
@@ -91,8 +100,6 @@ const IndexPage = ({ className }) => {
             </p>
           </div>
 
-
-
           <div className="art-translated-icons">
             <StaticImage
               className="icon"
@@ -109,8 +116,6 @@ const IndexPage = ({ className }) => {
               phone’s image libraries.
             </p>
           </div>
-
-
         </div>
 
         <div className="article">
@@ -216,11 +221,22 @@ const InstructionalArticle = styled.article`
       }
     }
   }
+  & #become-beta-tester-email-block{
+    margin: 1rem auto;
+    & > a {
+      color: var(--white);
+      font-weight: 400;
+      background: var(--green);
+      border-radius: 20px;
+      padding: 12px 15.288px;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
   .art-translated-icons {
     @media (min-width: 700) {
       flex-direction: row;
     }
   }
 `
-
 export default IndexPage
