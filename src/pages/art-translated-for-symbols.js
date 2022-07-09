@@ -5,6 +5,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/Seo'
 import { Link } from 'gatsby'
 
+import { BsPlayCircle } from 'react-icons/bs'
+
 const SymbolismPage = () => {
   return (
     <Layout>
@@ -13,11 +15,17 @@ const SymbolismPage = () => {
         description="You can now understand a new and unique artistic language now and over history with one of the first mobile apps to convey the meanings, intentions and feelings of symbols in Western art. This app is unique from most books and other reference sources using a structured database of over 120,000 indicators to translate this language in your hand anywhere in the world."
       />
       <section>
-        <div className="section-feature-image drop-shadow">
+        <div className="section-feature-image drop-shadow play-video__block">
           <Link
             to="/symbol-video"
             title="Watch Video of the Art Translated Symbolism Mobile App"
+            className="play-video__link"
           >
+            <BsPlayCircle
+              className="play-video__icon play-video__icon--symbols"
+              title="Watch Video of the Art Translated Symbolism Mobile App"
+            />
+
             <StaticImage
               className="feature-image"
               src="../images/full-page/for-symbols-featureImg.jpg"

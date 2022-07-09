@@ -4,6 +4,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/Seo'
 import { Link } from 'gatsby'
 
+import { BsPlayCircle } from 'react-icons/bs'
+
 const MovmentsPage = () => {
   return (
     <Layout>
@@ -12,27 +14,37 @@ const MovmentsPage = () => {
         description={`Have Fun While Identifying And Learning About Western Art Movements or Styles. Where You Are - When You Want It`}
       />
       <section>
-        <div className="section-feature-image drop-shadow">
+        <div className="section-feature-image drop-shadow play-video__block">
           <Link
+            className="play-video__link"
             to="/movement-video"
             title="Watch Video of the Art Translated for Movements Mobile App"
           >
-          <StaticImage
-            className="feature-image"
-            src="../images/full-page/for-movements-featureImg.jpg"
-            alt="Three horizontal snapshots with arrows describing mobile application flow for Art Translated Movent Classifier App."
-            placeholder="blurred"
-            layout="constrained"
-            format="webp"
-            height={336}
-          />
-    </Link>
+            <BsPlayCircle
+              className="play-video__icon play-video__icon--movements"
+              title="Watch Video of the Art Translated for Movements Mobile App"
+            />
+            <StaticImage
+              className="feature-image"
+              src="../images/full-page/for-movements-featureImg.jpg"
+              alt="Three horizontal snapshots with arrows describing mobile application flow for Art Translated Movent Classifier App."
+              placeholder="blurred"
+              layout="constrained"
+              format="webp"
+              height={336}
+            />
+          </Link>
         </div>
         <h1>Art Translated for Art Movements</h1>
         <div className="article">
           <p className="article-text">
-            <Link to="/movement-video" title="Watch Video of Art Translated Movement Classifier Mobile App" className="watch-video">
-              Video of Art Translated Movement Classifier Mobile App</Link>
+            <Link
+              to="/movement-video"
+              title="Watch Video of Art Translated Movement Classifier Mobile App"
+              className="watch-video"
+            >
+              Video of Art Translated Movement Classifier Mobile App
+            </Link>
           </p>
         </div>
         <div className="article">
