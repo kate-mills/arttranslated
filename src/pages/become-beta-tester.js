@@ -11,7 +11,7 @@ import styled from 'styled-components'
 
 const IndexPage = ({ className }) => {
   return (
-    <Layout hideFooter={true}>
+    <Layout isBetaTesterPage={true}>
       <Seo title={`Art Translated Mobile App Beta Testing`} />
 
       <InstructionalArticle className={className}>

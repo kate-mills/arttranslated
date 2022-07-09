@@ -2,24 +2,24 @@
 
 import React from 'react'
 import Navbar from './Nav'
-import Footer from './Footer'
+import BecomeBetaTesterBlock from './BecomeBetaTesterBlock'
 import 'normalize.css'
 import './layout.css'
 
-const Layout = ({ hideFooter, children }) => {
+const Layout = ({ isBetaTesterPage, children }) => {
   return (
     <React.Fragment>
       <header id="header">
         <Navbar />
       </header>
-      <main id="main">
-        {children}
-      </main>
-    {!hideFooter && <Footer/>}
+      <main id="main">{children}</main>
+      <footer id="footer">
+        {!isBetaTesterPage && <BecomeBetaTesterBlock />}
+      </footer>
     </React.Fragment>
   )
 }
 Layout.defaultProps = {
-  hideFooter: false,
+  isBetaTesterPage: false,
 }
 export default Layout

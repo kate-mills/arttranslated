@@ -2,17 +2,17 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const Footer = ({ className }) => {
+const BecomeBetaTesterBlock  = ({ className }) => {
   return (
-    <FooterWrapper>
+    <div  className={className}>
       <Link to="/become-beta-tester" title="Become Beta Tester">
         Become Beta Tester
       </Link>
-    </FooterWrapper>
+    </div>
   )
 }
 
-const FooterWrapper = styled.footer`
+export default styled(BecomeBetaTesterBlock)`
   align-items: center;
   display: flex;
   justify-content: center;
@@ -28,4 +28,4 @@ const FooterWrapper = styled.footer`
     text-align: center;
   }
 `
-export default Footer
+/*export default BecomeBetaTesterLink*/
