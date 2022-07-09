@@ -35,7 +35,6 @@ module.exports = {
         theme_color: `#055c6e`,
         display: `standalone`,
         icon: `src/images/icon.png`,
-        icon_options: `any maskable`,
       },
     },
     'gatsby-plugin-next-seo',
