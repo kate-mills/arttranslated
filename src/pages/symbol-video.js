@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 
 const SymbolismVideoPage = () => {
   return (
-    <Layout>
+    <Layout showFooter={true} application={{APP_NAME: 'ART TRANSLATED FOR SYMBOLS'}}>
     <Seo title="Video: Art Translated Symbolism"/>
       <Video id="video"/>
     </Layout>

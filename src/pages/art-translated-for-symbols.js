@@ -9,7 +9,7 @@ import { BsPlayCircle } from 'react-icons/bs'
 
 const SymbolismPage = () => {
   return (
-    <Layout>
+    <Layout showFooter={true} application={{APP_NAME: 'ART TRANSLATED FOR SYMBOLS'}}>
       <Seo
         title="Art Translated for Symbols"
         description="You can now understand a new and unique artistic language now and over history with one of the first mobile apps to convey the meanings, intentions and feelings of symbols in Western art. This app is unique from most books and other reference sources using a structured database of over 120,000 indicators to translate this language in your hand anywhere in the world."

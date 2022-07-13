@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 
 const MovementVideoPage = ()=> {
   return (
-    <Layout>
+    <Layout showFooter={true} application={{APP_NAME: 'ART TRANSLATED FOR MOVEMENTS'}}>
     <Seo title="Video: Art Translated Movement Classifier"/>
       <Video id="video" />
     </Layout>

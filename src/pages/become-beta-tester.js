@@ -9,11 +9,13 @@ import Seo from '../components/Seo'
 
 import styled from 'styled-components'
 
-const IndexPage = ({ className }) => {
-  return (
-    <Layout isBetaTesterPage={true}>
-      <Seo title={`Art Translated Mobile App Beta Testing`} />
+const IndexPage = ({ className, location, ...rest }) => {
+  const appName =
+    location?.state?.APP_NAME || 'SYMBOLS/MOVEMENTS'
 
+  return (
+    <Layout showFooter={false}>
+      <Seo title={`Art Translated Mobile App Beta Testing`} />
       <InstructionalArticle className={className}>
         <h3>Become An Art Translated Beta Tester</h3>
         <p className="article-thank-you">
@@ -25,7 +27,9 @@ const IndexPage = ({ className }) => {
           <ol className="article-ol">
             <li>
               Send an email to:{' '}
-              <a href="mailto:info.arttranslated@gmail.com?subject=I want to be a beta tester!&body=All we need is your name and email below">
+              <a
+                href={`mailto:info.arttranslated@gmail.com?subject=Beta tester for ${appName}&body=All we need is your name and email below`}
+              >
                 info.arttranslated@gmail.com
               </a>
               {` `}
@@ -33,7 +37,7 @@ const IndexPage = ({ className }) => {
             </li>
             <div id="become-beta-tester-email-block">
               <a
-                href="mailto:info.arttranslated@gmail.com?subject=I want to be a beta tester!&body=All we need is your name and email below"
+                href={`mailto:info.arttranslated@gmail.com?subject=Beta tester for ${appName}&body=All we need is your name and email below`}
                 className="become-beta-tester-email-button"
               >
                 Become Beta Tester

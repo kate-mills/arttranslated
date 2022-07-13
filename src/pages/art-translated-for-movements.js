@@ -8,7 +8,8 @@ import { BsPlayCircle } from 'react-icons/bs'
 
 const MovmentsPage = () => {
   return (
-    <Layout>
+
+    <Layout showFooter={true} application={{APP_NAME: 'ART TRANSLATED FOR MOVEMENTS'}}>
       <Seo
         title={`Art Translated Movement Classifier`}
         description={`Have Fun While Identifying And Learning About Western Art Movements or Styles. Where You Are - When You Want It`}

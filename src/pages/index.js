@@ -6,7 +6,7 @@ import Seo from '../components/Seo'
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout showFooter={false}>
       <Seo title="Art Translated - Understand the Language of Art"/>
       <section className="welcome">
         <article className="flex-row">
