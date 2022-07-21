@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/Seo'
 import { Link } from 'gatsby'
 
-import { BsPlayCircle } from 'react-icons/bs'
+//import { BsPlayCircle } from 'react-icons/bs'
 
 const MovmentsPage = () => {
   return (
@@ -21,10 +21,7 @@ const MovmentsPage = () => {
             to="/movement-video"
             title="Watch Video of the Art Translated for Movements Mobile App"
           >
-            <BsPlayCircle
-              className="play-video__icon play-video__icon--movements"
-              title="Watch Video of the Art Translated for Movements Mobile App"
-            />
+    {/*<BsPlayCircle className="play-video__icon play-video__icon--movements" title="Watch Video of the Art Translated for Movements Mobile App" />*/}
             <StaticImage
               className="feature-image"
               src="../images/full-page/for-movements-featureImg.jpg"
