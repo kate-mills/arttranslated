@@ -11,7 +11,7 @@ module.exports = {
     twitterUsername: `katie_napa`,
     baseUrl: `https://arttranslated.netlify.app/`,
     siteUrl: `https://arttranslated.netlify.app/`,
-    image: `/seoimage.jpg`,
+    image: `seoimage.jpg`,
     defaultImage: `https://arttranslated.netlify.app/seoimage.jpg`,
   },
   plugins: [
